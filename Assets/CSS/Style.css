@@ -19,7 +19,7 @@
 
 
 /*Phone vertical */
-@media(max-width:780px)
+@media(max-width:779px)
 {
 
 
@@ -73,21 +73,21 @@ form textarea
     width: 14px;
      position: absolute;
      top: 3px;
-     left: 10px;
+     left: 5px;
     }
 
 .twitch {
     position:absolute;
     
     width:14px;
-    right: 30px;
+    right: 10px;
     top:3px
 }
 
 .twitter{
     position:absolute;
-    width: 15px;
-    right: 45px;
+    width: 14px;
+    right: 25px;
     top: 3px;
 
 }
@@ -95,13 +95,13 @@ form textarea
 .insta{
     position:absolute;
     width:14px;
-    right: 60px;
+    right: 40px;
     top:3px
 }
 .youtube{
     position:absolute;
     width:14px;
-    right: 75px;
+    right: 55px;
     top:3px
 
 }
@@ -118,7 +118,7 @@ footer{
 .contBox
 {
     
-        margin: 1px;
+        margin: 12px;
         grid-area: content;
         display:flex;
         flex-direction: column;
@@ -252,6 +252,240 @@ display: block;
 }
 }
 
+/*tablet vertical */
+@media(min-width:780px)
+{
+
+
+
+body{
+    background-color: rgb(255, 255, 255);
+    }
+
+.home{  
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr,1fr,1fr,50px;
+    grid-template-areas: "nav nav nav nav"
+                        "content content content content"
+                        "footer footer footer footer";
+}
+nav{
+    background-color: rgb(0, 0, 0);
+        
+        
+       color: aliceblue;
+       text-align: center;
+       grid-area: nav;
+       position: fixed;
+       border: 10;
+       margin-bottom: 5px;
+       width: 100%; 
+       font-size:medium;
+  
+    }
+
+form
+{
+grid-area: content;
+width:1fr;
+margin-left: 20px;
+margin-top: 13px;
+}
+
+form textarea
+{
+    width: 478px;
+}
+
+    a{
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+    }
+
+.logo{
+    width: 25px;
+     position: absolute;
+     top: 7px;
+     left: 10px;
+    }
+
+.twitch {
+    position:absolute;
+    
+    width:25px;
+    right: 10px;
+    top:7px
+}
+
+.twitter{
+    position:absolute;
+    width: 25px;
+    right: 35px;
+    top: 7px;
+
+}
+
+.insta{
+    position:absolute;
+    width:25px;
+    right: 60px;
+    top:7px
+}
+.youtube{
+    position:absolute;
+    width:25px;
+    right: 85px;
+    top:7px
+
+}
+
+footer{
+    background-color: black;
+    grid-area: footer;
+    color: aliceblue;
+}
+
+
+/*Content*/
+
+.contBox
+{
+    
+        margin: 40px;
+        grid-area: content;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+  }
+
+.retro__img{
+    width: 100%;
+}
+
+.retro__tit{
+    margin-top: 13px;
+
+}
+
+.mini__img{
+width: 100%;}
+
+
+.mini__tit{
+    margin-top: 13px;
+}
+.perfect__img
+{
+    width: 100%;
+}
+
+.perfect__tit{
+    margin-top: 13px;
+}
+
+.valfaris
+{
+    
+width: 100%;
+
+}
+
+.valfaris__text
+{
+    width: 100%;
+}
+
+
+
+
+/*Burger menu */
+
+.burguer 
+   {
+    margin-top:  40px;
+    
+    width: 45px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 6%;
+    top: 5px;
+    cursor: pointer;
+    position: fixed;
+    grid-area: content;
+
+    
+   }
+   
+   
+.burguer span 
+    {
+    display: block;
+    width: 100%;
+    background:rgb(54, 147, 177);
+    height: 10px;
+    margin-top: 3px;
+    transform-origin: 0px 100%;
+    transition: all 200ms;
+    grid-area: content;
+    }
+
+
+.activeline1 {
+transform:rotate(45deg)
+translate(0px, -6px);
+}
+.activeline2{
+opacity:0;
+margin-left: -30px;
+}
+.activeline3{
+    Transform: rotate(-45deg)
+    translate(6px, 8px);
+}
+
+
+
+
+ .logins {
+    
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    font-size: 30px;    
+    justify-content: space-evenly;
+    position: fixed;
+    list-style: none;
+    z-index: 900;
+    top: 55px;
+    right: 43px;
+    display: block;
+
+    
+         }
+
+.social a {
+    flex-direction: column;
+    width: 10px;
+    background-color: rgb(245, 240, 240);
+    font-size: 35px;    
+   float: right;
+}
+
+aside{
+    display: none;
+}
+
+.sidekick
+{
+background-color: rgb(0, 0, 0);
+color: aliceblue;
+margin-top: 10px;
+display: block;
+}
+}
+
 
 /*  laptops*/
 
@@ -296,57 +530,59 @@ display: block;
         width: 100%; 
     }
     
-    .logo{
-        width: 14px;
-         position: absolute;
-         top: 3px;
-         left: 10px;
-        }
-    
-    .twitch {
-        position:absolute;
-        width:14px;
-        right: 130px;
-        top:3px
-    
-    }
-    
-    .twitter{
-        position:absolute;
-        width:14px;
-        right: 145px;
-        top: 3px;
-    
-    }
-    
-    .insta{
-        position:absolute;
-        width:14px;
-        right: 160px;
-        top:3px
-    }
-    .youtube{
-        position:absolute;
-        width:14px;
-        right: 175px;
-        top:3px
-    }
     a{
         color: rgb(255, 255, 255);
-        font-size: 25
-    px;
+        font-size: 30px;
     }
+
+.logo{
+    width: 25px;
+     position: absolute;
+     top: 7px;
+     left: 10px;
+    }
+
+.twitch {
+    position:absolute;
+    
+    width:25px;
+    right: 10px;
+    top:7px
+}
+
+.twitter{
+    position:absolute;
+    width: 25px;
+    right: 35px;
+    top: 7px;
+
+}
+
+.insta{
+    position:absolute;
+    width:25px;
+    right: 60px;
+    top:7px
+}
+.youtube{
+    position:absolute;
+    width:25px;
+    right: 85px;
+    top:7px
+
+}
     
     footer{
         width: 100%; 
         grid-area: footer;
+        margin-top: 25px;
     }
     
     aside{
         color: rgb(255, 250, 250);
         width: 100%; 
         height:100%;
-        margin: 15px;
+        margin: 37px;
         padding-left: 10px;
        text-overflow: inherit;
         float: right;
@@ -383,7 +619,7 @@ display: block;
     }
     
     .contBox {
-    margin: 15px;
+    margin: 36px;
     grid-area: content;
         display:flex;
         flex-direction: row;
@@ -506,57 +742,59 @@ display: block;
         width: 100%; 
     }
     
-    .logo{
-        width: 14px;
-         position: absolute;
-         top: 3px;
-         left: 10px;
-        }
-    
-    .twitch {
-        position:absolute;
-        width:14px;
-        right: 130px;
-        top:3px
-    
-    }
-    
-    .twitter{
-        position:absolute;
-        width:14px;
-        right: 145px;
-        top: 3px;
-    
-    }
-    
-    .insta{
-        position:absolute;
-        width:14px;
-        right: 160px;
-        top:3px
-    }
-    .youtube{
-        position:absolute;
-        width:14px;
-        right: 175px;
-        top:3px
-    }
     a{
         color: rgb(255, 255, 255);
-        font-size: 25px;
+        font-size: 30px;
     }
+
+.logo{
+    width: 25px;
+     position: absolute;
+     top: 7px;
+     left: 10px;
+    }
+
+.twitch {
+    position:absolute;
+    
+    width:25px;
+    right: 10px;
+    top:7px
+}
+
+.twitter{
+    position:absolute;
+    width: 25px;
+    right: 35px;
+    top: 7px;
+
+}
+
+.insta{
+    position:absolute;
+    width:25px;
+    right: 60px;
+    top:7px
+}
+.youtube{
+    position:absolute;
+    width:25px;
+    right: 85px;
+    top:7px
+
+}
     
     footer{
         width: 100%; 
         grid-area: footer;
-        margin: 15px;
+        margin-top: 25px;
     }
     
     aside{
         color: rgb(255, 250, 250);
         width: 100%; 
         height:100%;
-        margin: 30px;
+        margin: 37px;
         padding-left: 10px;
        text-overflow: inherit;
         float: right;
