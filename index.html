@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href=".//Assets/CSS/Style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
    
   
     
 </head>
 
-<body class="home">
+<body class="col 12">
 
 <div   class="burguer">
     <Span class="line1"></Span>
@@ -21,39 +23,61 @@
 </div>
 
    
-<nav>
+<nav class="align-items-center">
 
     
-        <a href="./index.html">Home</a> 
-        <a href="./Pages/Blog.html">Blog</a>
-        <a href="./Pages/Store.html">Store</a>
-        <a href="./Pages/Podcast.html">Podcast</a>
-        <a href="./Pages/Patranas.html">Patrañas</a>
+        <a class="col 2" href="./Pages/">Home</a> 
+        <a class="col 2" href="./Pages/Blog.html">Blog</a>
+        <a class="col 2" href="./Pages/Store.html">Store</a>
+        <a class="col 2" href="./Pages/Podcast.html">Podcast</a>
+        <a class="col 2" href="./Pages/Patranas.html">Patrañas</a>
     
 
     
 
-         <div class="social">
-            <a href="https://www.facebook.com/abuguetcom" > 
-                <img class="logo" src="./Assets/logo monochrome blue.svg" alt="">  
-            </a>
-            <a href="https://www.twitch.tv/abuguet">
-                <img class="twitch" src="./Assets/STwitch.png" alt="">
-            </a>    
-            <a href="https://twitter.com/abuguet">
-            <img class="twitter" src="./Assets/Stwitter.png" alt=""></a>
-        <a href="https://www.instagram.com/abuguet/?hl=es">   
-            <img class="insta" src="./Assets/Sinstagram.png" alt="">
-        </a> 
-        <a href="https://www.youtube.com/channel/UCVsB4OtmKjlitvZRA9s8DJQ">
-            <img class="youtube" src="./Assets/Syoutube.png" alt="">
-        </a>
+         <div class="align-items-start">
+            <a class="col 1" href="https://www.facebook.com/abuguetcom" > 
+            <img class="img-fluid" width=20px   src="./Assets/logo monochrome blue.svg" alt=""> </a>
+
+            <a class="col 1" href="https://www.twitch.tv/abuguet">
+            <img class="img-fluid" width=20px  src="./Assets/STwitch.png" alt=""> </a>    
+
+            <a class="col 1" href="https://twitter.com/abuguet">
+            <img class="img-fluid" width=20px  src="./Assets/Stwitter.png" alt=""></a>
+            
+            <a class="col 1" href="https://www.instagram.com/abuguet/?hl=es">   
+            <img class="img-fluid" width=20px  src="./Assets/Sinstagram.png" alt=""></a> 
+
+            <a class="col 1"  href="https://www.youtube.com/channel/UCVsB4OtmKjlitvZRA9s8DJQ">
+            <img class="img-fluid" width=20px  src="./Assets/Syoutube.png" alt=""> </a>
          </div>
 </nav> 
 
-</Div>      
-    <aside data-aos="fade-left">
-        <ul class="login">
+</Div >      
+  
+    
+    
+        
+    
+    <Div class="row justify-content-around" Heigth="320px">
+               <Div class="col-3 ">
+           <P Class="retro__tit">Retro</P>  
+            <img class="img-fluid" src="./Assets/Wallpaper.jpg" alt="" width="900" height="" >
+        </Div>
+
+        <Div class="col-3"> 
+            <p class="mini__tit"  >Mini Reseñas</p>
+            <img class="img-fluid" src="./Assets/Resident-evil-5-front-400x357.jpg" alt="" > 
+       </Div>
+
+        <div class="col-3">
+            <p class="perfect__tit">Perfect</p> 
+        <img class="img-fluid" src="./Assets/Thumbnail-Recovered.jpg" alt="" width="900" height="">
+        </div>
+
+    <Div class="col-3">      
+    <aside class="col ">
+        <ul class="">
             <li>Inicio De Sesion</li>
             <li>Mensajes </li>
             <li>Entrada</li>
@@ -62,32 +86,15 @@
         </ul>
 
     </aside>
-   
-    
-    
-        
-    
-       <Div class="contBox">
-       
-        <Div class="retro">
-           <P Class="retro__tit">Retro</P>  
-            <img class="retro__img" src="./Assets/Wallpaper.jpg" alt="" width="900" height="" >
-        </Div>
-
-        <Div class="mini"> 
-            <p class="mini__tit">Mini Reseñas</p>
-            <img class="mini__img" src="./Assets/Resident-evil-5-front-400x357.jpg" alt="" > 
-       </Div>
-
-        <div class="perfect">
-            <p class="perfect__tit">Perfect</p> 
-        <img class="perfect__img" src="./Assets/Thumbnail-Recovered.jpg" alt="" width="900" height="">
-        </div>
-      </Div> 
+    </Div> 
+     
+</Div> 
     
     
     <Footer><h5>©Abuguet 2022 Todos los derechos reservados</h5></Footer>
     <script src="./Assets/js/script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     
     </body>
 </html>

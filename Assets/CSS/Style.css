@@ -5,7 +5,7 @@
     font-weight: 600;
     
 }
-
+/*
 .home{  
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -16,7 +16,7 @@
 }
 
 /*Phone vertical *
-@media(min-width:320px)*/
+@media(min-width:320px)*
 
 body{
     background-color: rgb(248, 248, 248);
@@ -94,7 +94,7 @@ footer{
 }
 
 
-/*Content*/
+/*Content*
 
 .contBox
 {
@@ -129,7 +129,7 @@ width: 100%;
 {
     width: 100%;
 }
-/*Burger menu */
+/*Burger menu *
 .burguer 
    {
     margin: 10px;
@@ -200,7 +200,7 @@ color: aliceblue;
 
 
 
-/*  laptops*/
+/*  laptops*
 
 @media(min-width:1024px)
 {
@@ -398,7 +398,7 @@ color: aliceblue;
 
 }
 
- /*PC high*/
+ /*PC high*
  @media(min-width:1200px)
 
 {
