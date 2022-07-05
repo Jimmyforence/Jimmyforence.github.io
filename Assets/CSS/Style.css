@@ -46,6 +46,7 @@ nav{
        position: fixed;
        border: 10;
        margin-bottom: 5px;
+       z-index: 9000;
        width: 100%; 
        font-size:medium;
   
@@ -113,6 +114,57 @@ footer{
 }
 
 
+/* Store*/
+
+/*Store */
+.storeBox{
+    margin: 12px;
+        grid-area: content;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+}
+.productA{
+      
+
+    margin: 40px;
+    grid-area: content;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align:  center;
+
+
+
+}
+
+.productB{
+  
+
+margin: 40px;
+grid-area: content;
+display:flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 100%;
+text-align:  center;
+
+
+}
+
+.productC{
+  
+
+margin: 40px;
+grid-area: content;
+display:flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 100%;
+text-align:  center;
+}
 /*Content*/
 
 .contBox
@@ -170,14 +222,15 @@ width: 100%;
 
 .burguer 
    {
-    margin-top:  12px;
+    margin-top:  45px;
     
     width: 45px;
     height: 45px;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    right: 6%;
+    right: 0px;
     top: 5px;
+    z-index: 9000;
     cursor: pointer;
     position: fixed;
     grid-area: content;
@@ -223,7 +276,7 @@ margin-left: -30px;
     justify-content: space-evenly;
     position: fixed;
     list-style: none;
-    z-index: 900;
+    z-index: 9000;
     top: 55px;
     right: 43px;
     display: block;
@@ -265,7 +318,7 @@ body{
 .home{  
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 1fr,1fr,1fr,50px;
+    grid-template-rows: 1fr,1fr,1fr,1fr;
     grid-template-areas: "nav nav nav nav"
                         "content content content content"
                         "footer footer footer footer";
@@ -281,6 +334,7 @@ nav{
        border: 10;
        margin-bottom: 5px;
        width: 100%; 
+       z-index: 9000;
        font-size:medium;
   
     }
@@ -346,6 +400,55 @@ footer{
     color: aliceblue;
 }
 
+/*Store */
+.storeBox{
+    margin: 12px;
+        grid-area: content;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+}
+.productA{
+      
+
+    margin: 40px;
+    grid-area: content;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align:  center;
+
+
+
+}
+
+.productB{
+  
+
+margin: 40px;
+grid-area: content;
+display:flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 100%;
+text-align:  center;
+
+
+}
+
+.productC{
+  
+
+margin: 40px;
+grid-area: content;
+display:flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 100%;
+text-align:  center;
+}
 
 /*Content*/
 
@@ -404,14 +507,15 @@ width: 100%;
 
 .burguer 
    {
-    margin-top:  40px;
+    margin-top:  45px;
     
     width: 45px;
     height: 45px;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    right: 6%;
+    right: 0px;
     top: 5px;
+    z-index: 9000;
     cursor: pointer;
     position: fixed;
     grid-area: content;
@@ -457,7 +561,7 @@ margin-left: -30px;
     justify-content: space-evenly;
     position: fixed;
     list-style: none;
-    z-index: 900;
+    z-index: 9000;
     top: 55px;
     right: 43px;
     display: block;
@@ -500,6 +604,56 @@ display: block;
                             "content content content aside"
                             "footer footer footer footer";
     }
+
+/*Store */
+.storeBox{
+    margin: 12px;
+        grid-area: content;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+}
+.productA{
+      
+
+    margin: 40px;
+    grid-area: content;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    text-align:  center;
+
+
+
+}
+
+.productB{
+  
+
+margin: 40px;
+grid-area: content;
+display:flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 30%;
+text-align:  center;
+
+
+}
+
+.productC{
+  
+
+margin: 40px;
+grid-area: content;
+display:flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 30%;
+text-align:  center;
+}
 
     .burguer 
     {
@@ -699,23 +853,67 @@ display: block;
     .home{  
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 1fr,1fr,1fr,40px;
+        grid-template-rows: 1fr,1fr,1fr,30px;
         grid-template-areas: "nav nav nav nav"
                             "content content content aside"
                             "footer footer footer footer";
     }
 
-    .product{
-        grid-area: content;
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        width: 30%;
-        margin: 5px;
-        padding: 3px;
-        text-align: center;
-    }
+ 
 
+
+/*Store */
+.storeBox{
+    margin: 12px;
+        grid-area: content;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+}
+.productA{
+      
+
+    margin: 40px;
+    grid-area: content;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    text-align:  center;
+
+
+
+}
+
+.productB{
+  
+
+margin: 40px;
+grid-area: content;
+display:flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 30%;
+text-align:  center;
+
+
+}
+
+.productC{
+  
+
+margin: 40px;
+grid-area: content;
+display:flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 30%;
+text-align:  center;
+}
+
+
+    
     .burguer 
     {
          display: none ;
@@ -788,18 +986,19 @@ display: block;
         width: 100%; 
         grid-area: footer;
         margin-top: 25px;
+        margin-right: 0px;
     }
     
-    aside{
+    .side{
         color: rgb(255, 250, 250);
         width: 100%; 
         height:100%;
-        margin: 37px;
+        margin-top: 37px;
         padding-left: 10px;
        text-overflow: inherit;
         float: right;
         list-style: none;
-        font-size: px;
+        
         background-color: rgb(0, 0, 0);
         grid-area: aside;
         display: block;
