@@ -1,21 +1,5 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    
-}
-
-/* .home{  
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 1fr,1fr,1fr,40px;
-    grid-template-areas: "nav nav nav nav"
-                        "content content content aside"
-                        "footer footer footer footer";
-} */
-
-
+$colorabuguet: rgb(96, 184, 243);
+$darkabuguet: rgb(3, 59, 97);
 
 
 /*Phone vertical */
@@ -26,6 +10,77 @@
 
 body{
     background-color: rgb(255, 255, 255);
+    nav{
+        background-color: rgb(0, 0, 0);
+            
+            
+           color: aliceblue;
+           text-align: center;
+           grid-area: nav;
+           position: fixed;
+           border: 10;
+           margin-bottom: 5px;
+           z-index: 9000;
+           width: 100%; 
+           font-size:medium;
+           .logo{
+            width: 14px;
+             position: absolute;
+             top: 3px;
+             left: 5px;
+            }
+        
+        .twitch {
+            position:absolute;
+            
+            width:14px;
+            right: 10px;
+            top:3px
+        }
+        
+        .twitter{
+            position:absolute;
+            width: 14px;
+            right: 25px;
+            top: 3px;
+        
+        }
+        
+        .insta{
+            position:absolute;
+            width:14px;
+            right: 40px;
+            top:3px
+        }
+        .youtube{
+            position:absolute;
+            width:14px;
+            right: 55px;
+            top:3px
+        
+        }
+       }
+       form
+       {
+       grid-area: content;
+       width:1fr;
+       margin-left: 20px;
+       margin-top: 13px;
+       
+       textarea
+       {
+           width: 478px;
+       }
+       
+           a{
+               color: rgb(255, 255, 255);
+               font-size: 10px;
+           }
+       
+       
+       }
+      
+        
     }
 
 .home{  
@@ -36,76 +91,11 @@ body{
                         "content content content content"
                         "footer footer footer footer";
 }
-nav{
-    background-color: rgb(0, 0, 0);
-        
-        
-       color: aliceblue;
-       text-align: center;
-       grid-area: nav;
-       position: fixed;
-       border: 10;
-       margin-bottom: 5px;
-       z-index: 9000;
-       width: 100%; 
-       font-size:medium;
-  
-    }
 
-form
-{
-grid-area: content;
-width:1fr;
-margin-left: 20px;
-margin-top: 13px;
-}
 
-form textarea
-{
-    width: 478px;
-}
 
-    a{
-        color: rgb(255, 255, 255);
-        font-size: 10px;
-    }
 
-.logo{
-    width: 14px;
-     position: absolute;
-     top: 3px;
-     left: 5px;
-    }
 
-.twitch {
-    position:absolute;
-    
-    width:14px;
-    right: 10px;
-    top:3px
-}
-
-.twitter{
-    position:absolute;
-    width: 14px;
-    right: 25px;
-    top: 3px;
-
-}
-
-.insta{
-    position:absolute;
-    width:14px;
-    right: 40px;
-    top:3px
-}
-.youtube{
-    position:absolute;
-    width:14px;
-    right: 55px;
-    top:3px
-
-}
 
 footer{
     background-color: black;
@@ -123,6 +113,46 @@ footer{
         display:flex;
         flex-direction: column;
         justify-content: space-evenly;
+        .productA{
+      
+
+    margin: 40px;
+    grid-area: content;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align:  center;
+
+
+
+}
+
+.productB{
+  
+
+margin: 40px;
+grid-area: content;
+display:flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 100%;
+text-align:  center;
+
+
+}
+
+.productC{
+  
+
+margin: 40px;
+grid-area: content;
+display:flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 100%;
+text-align:  center;
+}
         
 }
 .productA{
@@ -305,7 +335,7 @@ display: block;
 }
 }
 
-/*tablet vertical */
+
 @media(min-width:780px)
 {
 
@@ -407,48 +437,58 @@ footer{
         display:flex;
         flex-direction: column;
         justify-content: space-evenly;
-        
-}
-.productA{
+        button{
+            background-color:$darkabuguet ;
+            color: white;
+            &:hover{
+            background-color: $colorabuguet; 
+            color: black;
+            font-weight:bolder;
+            
+                
+            }
+        .productA{
       
 
-    margin: 40px;
-    grid-area: content;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100%;
-    text-align:  center;
+            margin: 40px;
+            grid-area: content;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 100%;
+            text-align:  center;
+        
+        
+        
+        }
+        
+        .productB{
+          
+        
+        margin: 40px;
+        grid-area: content;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        text-align:  center;
+        
+        
+        }
+        
+        .productC{
+          
+        
+        margin: 40px;
+        grid-area: content;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        text-align:  center;
+        }
+        }
 
-
-
-}
-
-.productB{
-  
-
-margin: 40px;
-grid-area: content;
-display:flex;
-flex-direction: column;
-justify-content: space-evenly;
-width: 100%;
-text-align:  center;
-
-
-}
-
-.productC{
-  
-
-margin: 40px;
-grid-area: content;
-display:flex;
-flex-direction: column;
-justify-content: space-evenly;
-width: 100%;
-text-align:  center;
-}
 
 /*Content*/
 
@@ -605,31 +645,6 @@ display: block;
                             "footer footer footer footer";
     }
 
-/*SASS this*/
-
-.reP1
-{
-    width: 2fr;
-    grid-area: footer ;
-}
-.reP2
-{
-width: 1fr;
-grid-area: footer ;
-
-}
-.reP3
-{
-    width: 3fr;
-    grid-area: footer ;
-
-}
-
-
-
-
-
-
 /*Store */
 .storeBox{
     margin: 12px;
@@ -637,7 +652,17 @@ grid-area: footer ;
         display:flex;
         flex-direction: row;
         justify-content: space-evenly;
-        
+        button{
+            background-color:$darkabuguet ;
+            color: white;
+            &:hover{
+            background-color: $colorabuguet; 
+            color: black;
+            font-weight:bolder;
+            
+                
+        }
+        }
 }
 .productA{
       
@@ -649,7 +674,10 @@ grid-area: footer ;
     justify-content: space-evenly;
     width: 30%;
     text-align:  center;
+    &:hover{
 
+    }
+   
 
 
 }
@@ -707,11 +735,16 @@ text-align:  center;
         font-size: 25px;
         margin-bottom: 15px;
         width: 100%; 
+ 
     }
     
     a{
         color: rgb(255, 255, 255);
         font-size: 30px;
+        &:hover{    
+            color: $colorabuguet;
+            font-weight: bold;
+                }
     }
 
 .logo{
@@ -870,57 +903,41 @@ text-align:  center;
     
 
 }
+/*____________________________________________/*
+
 
  /*PC high*/
- @media(min-width:1200px)
+ @media(min-width:1200px){
 
-{
+
     .home{  
         display: grid;
-        grid-template-columns: repeat(4, 3fr);
-        grid-template-rows: 3fr ;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr,1fr,1fr,30px;
         grid-template-areas: "nav nav nav nav"
                             "content content content aside"
                             "footer footer footer footer";
     }
 
- 
-/*SASS this*/
-
- .contBox2 {
-    margin: 30px;
-    grid-area: content;
-           
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content:flex-end;
+    .side{
+        color: rgb(255, 250, 250);
+        width: 100%; 
+        height:100%;
+        margin-top: 37px;
+        padding-left: 10px;
+       text-overflow: inherit;
+        float: right;
+        list-style: none;
         
-    } 
+        background-color: rgb(0, 0, 0);
+        grid-area: aside;
+        display: block;
+    ul{
+        list-style: none;
 
-
-.re1
-{
- width: 200px;
- grid-area: content;
-
-}
-.re2
-{
-width: 1fr;
-grid: content;
-}
-.re3
-{
-width: 3fr;
-grid-area: content;
-}
-
-.portrait
-{
-    grid-area: content;
-    width: 1fr;
-}
+      }     
+    }
+         
 
 
 /*Store */
@@ -930,54 +947,81 @@ grid-area: content;
         display:flex;
         flex-direction: row;
         justify-content: space-evenly;
-        
-}
-.productA{
+        div{
+            &:hover{
+                animation-duration: 1s;
+                animation-name: zoom;
+                animation-play-state:paused;
+                animation-direction: reverse;
+              }
+              
+              @keyframes zoom {
+                from {
+                  
+                  width: 100%;
+
+                }
+              
+                to {
+                  
+                  width: 135%;
+                  
+                }
+              }
+            }
+        .productA{
       
 
-    margin: 40px;
-    grid-area: content;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 30%;
-    text-align:  center;
-
-
-
-}
-
-.productB{
+            margin: 40px;
+            grid-area: content;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 30%;
+            text-align:  center;
+           
+              
+         .productB{
+  
+            margin: 40px;
+            grid-area: content;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 30%;
+            text-align:  center;
+                
+                
+                }
+                .productC{
   
 
-margin: 40px;
-grid-area: content;
-display:flex;
-flex-direction: column;
-justify-content: space-evenly;
-width: 30%;
-text-align:  center;
+                    margin: 40px;
+                    grid-area: content;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    width: 30%;
+                    text-align:  center;
+                    }
+        
+                }
+            }
 
 
-}
 
-.productC{
-  
 
-margin: 40px;
-grid-area: content;
-display:flex;
-flex-direction: column;
-justify-content: space-evenly;
-width: 30%;
-text-align:  center;
-}
+
+
+
+
 
 
     
     .burguer 
     {
          display: none ;
+         
     }
     
     body h2{
@@ -999,49 +1043,51 @@ text-align:  center;
         border: 10;
         margin-bottom: 15px;
         width: 100%; 
+        a{
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+        }
+        .logo{
+            width: 25px;
+             position: absolute;
+             top: 7px;
+             left: 10px;
+            }
+        
+        .twitch {
+            position:absolute;
+            
+            width:25px;
+            right: 10px;
+            top:7px;
+        }
+        
+        .twitter{
+            position:absolute;
+            width: 25px;
+            right: 35px;
+            top: 7px;
+        
+        }
+        
+        .insta{
+            position:absolute;
+            width:25px;
+            right: 60px;
+            top:7px
+        }
+        .youtube{
+            position:absolute;
+            width:25px;
+            right: 85px;
+            top:7px
+        
+        }
     }
     
-    a{
-        color: rgb(255, 255, 255);
-        font-size: 30px;
-    }
+   
 
-.logo{
-    width: 25px;
-     position: absolute;
-     top: 7px;
-     left: 10px;
-    }
 
-.twitch {
-    position:absolute;
-    
-    width:25px;
-    right: 10px;
-    top:7px
-}
-
-.twitter{
-    position:absolute;
-    width: 25px;
-    right: 35px;
-    top: 7px;
-
-}
-
-.insta{
-    position:absolute;
-    width:25px;
-    right: 60px;
-    top:7px
-}
-.youtube{
-    position:absolute;
-    width:25px;
-    right: 85px;
-    top:7px
-
-}
     
     footer{
         width: 100%; 
@@ -1050,20 +1096,7 @@ text-align:  center;
         margin-right: 0px;
     }
     
-    .side{
-        color: rgb(255, 250, 250);
-        width: 100%; 
-        height:100%;
-        margin-top: 37px;
-        padding-left: 10px;
-       text-overflow: inherit;
-        float: right;
-        list-style: none;
-        
-        background-color: rgb(0, 0, 0);
-        grid-area: aside;
-        display: block;
-         }
+    
 
 
 
@@ -1101,272 +1134,67 @@ text-align:  center;
         display:flex;
         flex-direction: row;
         justify-content: space-evenly;
+        .mini{
+            width: 30%;
+            font-size:initial ;
+           
         
-    }
-    
-    
-    .mini{
-        width: 30%;
-        font-size:initial ;
-       
-    
-    
-    }
-    .mini__tit {
-        text-align: center;
-        font-size: 100%;
-        background-color: rgba(0, 255, 255, 0.055);
-        height:fit-content;
-    }
-    .mini__img {
-        width: 100%;
-        height: 60%
-    
-    }
-    
-    .mini div{
-        width: 30%;
         
-    }
-    
-    .retro{
-        width: 30%;
-    
-    }
-    
-    .retro__tit {
-        text-align:center;
-        font: size 100%;
+        }
+        .mini__tit {
+            text-align: center;
+            font-size: 100%;
+            background-color: rgba(0, 255, 255, 0.055);
+            height:fit-content;
+        }
+        .mini__img {
+            width: 100%;
+            height: 60%;
         
-        height:fit-content;
-    
-        background-color: rgba(0, 255, 255, 0.055);
-    }
-    
-    .retro__img {
-        width: 100%;
-        height: 60%
-    }
-    
-    .perfect{
-        width: 30%;
+        }
         
-    }
-    
-    .perfect__tit {
-        text-align: center;
-        font-size: 18px;
-        background-color: rgba(0, 255, 255, 0.055);
-        height:fit-content;
-    }
+        .mini div{
+            width: 30%;
+            
+        }
+        
+        .retro{
+            width: 30%;
+        
+        }
+        
+        .retro__tit {
+            text-align:center;
+            font: size 100%;
+            
+            height:fit-content;
+        
+            background-color: rgba(0, 255, 255, 0.055);
+        }
+        
+        .retro__img {
+            width: 100%;
+            height: 60%;
+        }
+        
+        .perfect{
+            width: 30%;
+            
+        }
+        
+        .perfect__tit {
+            text-align: center;
+            font-size: 18px;
+            background-color: rgba(0, 255, 255, 0.055);
+            height:fit-content;
+        }
+                  
+        .perfect__img {
+            width: 100%;
+            height: 60%;
+        }
+        
         
     
-    .perfect__img {
-        width: 100%;
-        height: 60%
     }
-    
-    
-
-}
-
-
-
-/* tablet landscape*
-
-@media(min-width:768)
-{
-
-    body {background-color: rgb(255, 123, 0);
-    }
-}
-
-
-/* tablet landscape*
-
-@media(min-width:768)
-{
-
-    body {background-color: rgb(255, 123, 0);
-    }
-}*
-body h2{
-    text-align: center;
-    }
-
-h5{
-    background-color: black;
-    color: rgb(255, 255, 255);
-}
-
-nav{
-    background-color: rgb(0, 0, 0);
-    
-   color: aliceblue;
-    text-align: center;
-    grid-area: nav;
-    position: fixed;
-    border: 10;
-    margin-bottom: 15px;
-    width: 100%; 
-}
-
-.logo{
-    width: 14px;
-     position: absolute;
-     top: 3px;
-     left: 10px;
-    }
-
-.twitch {
-    position:absolute;
-    width:14px;
-    right: 130px;
-    top:3px
-
-}
-
-.twitter{
-    position:absolute;
-    width:14px;
-    right: 145px;
-    top: 3px;
-
-}
-
-.insta{
-    position:absolute;
-    width:14px;
-    right: 160px;
-    top:3px
-}
-.youtube{
-    position:absolute;
-    width:14px;
-    right: 175px;
-    top:3px
-}
-a{
-    color: rgb(255, 255, 255);
-    font-size: 25
-px;
-}
-
-footer{
-    width: 100%; 
-    grid-area: footer;
-}
-
-aside{
-    color: aliceblue;
-    width: 100%; 
-    height:100%;
-    margin: 15px;
-    padding-left: 10px;
-   text-overflow: inherit;
-    float: right;
-    list-style: none;
-    font-size: px;
-    background-color: rgb(0, 0, 0);
-    grid-area: aside;
-}
-
- body div {
-    background-color: rgb(255, 255, 255);
-    width: 89%;
-    
-}
-
-
-div .descript{
-    margin: 15px;
-    padding: 10px;
-}
-
-
-.sonidoBoom{
-   
-   grid-area:content;
-   width: 100%;
-   margin-top: 15px;
-   
-   
-}
-
-.contBox {
-margin: 15px;
-grid-area: content;
-
-
-    /*display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    *
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-}
-
-
-.mini{
-    width: 30%;
-    font-size:initial ;
-   
-
-
-}
-.mini__tit {
-    text-align: center;
-    font-size: 100%;
-    background-color: rgba(0, 255, 255, 0.055);
-    height:fit-content;
-}
-.mini__img {
-    width: 100%;
-    height: 60%
-
-}
-
-.mini div{
-    width: 30%;
-    
-}
-
-.retro{
-    width: 30%;
-
-}
-
-.retro__tit {
-    text-align:center;
-    font: size 100%;
-    
-    height:fit-content;
-
-    background-color: rgba(0, 255, 255, 0.055);
-}
-
-.retro__img {
-    width: 100%;
-    height: 60%
-}
-
-.perfect{
-    width: 30%;
-    
-}
-
-.perfect__tit {
-    text-align: center;
-    font-size: 18px;
-    background-color: rgba(0, 255, 255, 0.055);
-    height:fit-content;
-}
-    
-
-.perfect__img {
-    width: 100%;
-    height: 60%
-}
-
-*/
+ }}
