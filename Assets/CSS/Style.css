@@ -878,56 +878,221 @@ text-align:  center;
     .home{  
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 1fr,1fr,1fr,40px ;
+        grid-template-rows: 4 ;
         grid-template-areas: "nav nav nav nav"
                             "content content content aside"
                             "footer footer footer footer";
     }
 
  
-/*SASS this*/
+/*Blog*/
+.contBoxBlog{
+    grid-area: content;
+    width: 100%;
+    display: grid;
+    margin:30px;
+
+    grid-template-columns: repeat(2,3fr);
+    grid-template-rows: 3 ;
+    grid-template-areas: "entry1 entry1"
+                            "entry2 entry2"                                
+                            "entry3 entry3"
+                            ;
+}   
+
+
+
+.valfBox
+{
+    grid-area:entry1 ;
+    
+}
+   
+.blogMini{
+    grid-area: entry2;
+    margin-top: 10px;
+    background-color: rgba(66, 66, 66, 0.089);
+}
+
+.miniImg{
+    width: 100%;
+}
+
+
+ /*SASS this*/
 
  .contBox2 {
     margin: 30px;
     grid-area: content;
     display: grid;
     
-    grid-template-columns: repeat(2,200px);
-    grid-template-rows: 1fr ;
-    grid-template-areas: "p1 portada"
-                        "p2"
+    grid-template-columns: repeat(2,2fr);
+    grid-template-rows: 5 ;
+    grid-template-areas:"h4 h4" 
+                        "p1 portada"
+                        "p2 p2"
                         "roca ai"
-                        "p3"
-                        "re8"
-       
-      
+                        "p3 p3"
+                        ;
+        
         
     } 
 
+   
+
+    Div h4
+    {
+ grid-area: h4;
+ text-align: center;
+ font-size:xx-large;
+ font-weight: bolder;
+    }
 
 .re1
 {
 
  grid-area: p1;
+ padding: 25px;
+
 
 }
 .re2
 {
-width: 1fr;
-grid: p2;
+grid-area: p2;
+width: 2fr;
+text-align: center;
+
+
 }
 .re3
 {
 width: 3fr;
 grid-area: p3;
+text-align: center;
+
 }
 
-.portrait
+.portada
 {
     grid-area: portada;
     width: 1fr;
+    padding-left: 100px;
 }
 
+.rock{
+    grid-area: roca;
+    margin-top: 20px;
+}
+
+.ai{
+    grid-area: ai;
+    margin-top: 20px;
+}
+
+
+/* ValdarisCont 3*/
+ .contBox3 {
+        margin: 35px;
+        grid-area: content;
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: 10 ;
+        grid-template-areas:"h4 h4" 
+                            "p1 p1"
+                            "p2 p2"
+                            "p3 p3"
+                            "p4 p4b"
+                            "p5 p5"
+                            "p6 p6"
+                            "p7 p7"
+                            "p8 p8"
+                            "p9 p9"
+                            ;
+            
+            
+        } 
+    
+        
+        .val1
+        {
+            grid-area: p1;
+            margin-top: 10px;
+            font-size:larger;
+        }
+        .val2
+        {
+            grid-area: p3;
+            margin: 10px;
+            text-align: center;
+
+        }
+        .val3
+        {
+            grid-area: p4b;
+            text-align: right;
+            font-size: large;
+            margin-left: 10px;
+        }
+
+        
+        .val4
+        {
+            grid-area: p5;
+            margin: 10px;
+            text-align: center;
+
+        }
+        .val5
+        {
+            grid-area: p7;
+            margin: 10px;
+
+            text-align: center;
+
+        }
+        .val6
+        {
+            grid-area: p9;
+            margin: 10px;
+
+            text-align: center;
+
+        }
+
+        .valPortada
+        {
+            grid-area: p2;
+            width: 50%;
+        
+        }
+
+        .valPortada img {
+            width: 200%;
+        }
+
+        .weapons
+        {
+            grid-area: p4;
+        }
+        
+        .headBang
+        {
+            grid-area: p6;
+           
+        }
+
+        .headBang img
+        {
+            width: 105%;
+        }
+        .enemy
+        {
+            grid-area: p8;
+        }
+        .enemy img 
+        {
+        margin-left:200px ;        
+        }
 
 /*Store */
 .storeBox{
