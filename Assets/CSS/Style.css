@@ -36,6 +36,221 @@ body{
                         "content content content content"
                         "footer footer footer footer";
 }
+
+/* SASS ThIS */
+/*Blog*/
+.contBoxBlog{
+    grid-area: content;
+    width: 100%;
+    display: grid;
+    margin:30px;
+
+    grid-template-columns: repeat(2,3fr);
+    grid-template-rows: 3 ;
+    grid-template-areas: "entry1 entry1"
+                            "entry2 entry2"                                
+                            "entry3 entry3"
+                            ;
+}   
+
+
+
+.valfBox
+{
+    grid-area:entry1 ;
+    
+}
+   
+.blogMini{
+    grid-area: entry2;
+    margin-top: 10px;
+    background-color: rgba(66, 66, 66, 0.089);
+}
+
+.miniImg{
+    width: 100%;
+}
+
+
+ /*SASS this*/
+
+ .contBox2 {
+    margin: 30px;
+    grid-area: content;
+    display: grid;
+    
+    grid-template-columns: repeat(2,2fr);
+    grid-template-rows: 5 ;
+    grid-template-areas:"h4 h4" 
+                        "p1 portada"
+                        "p2 p2"
+                        "roca ai"
+                        "p3 p3"
+                        ;
+        
+        
+    } 
+
+   
+
+    Div h4
+    {
+ grid-area: h4;
+ text-align: center;
+ font-size:xx-large;
+ font-weight: bolder;
+    }
+
+.re1
+{
+
+ grid-area: p1;
+ padding: 25px;
+
+
+}
+.re2
+{
+grid-area: p2;
+width: 2fr;
+text-align: center;
+
+
+}
+.re3
+{
+width: 3fr;
+grid-area: p3;
+text-align: center;
+
+}
+
+.portada
+{
+    grid-area: portada;
+    width: 1fr;
+    padding-left: 100px;
+}
+
+.rock{
+    grid-area: roca;
+    margin-top: 20px;
+}
+
+.ai{
+    grid-area: ai;
+    margin-top: 20px;
+}
+
+
+/* ValdarisCont 3*/
+ .contBox3 {
+        margin: 35px;
+        grid-area: content;
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: 10 ;
+        grid-template-areas:"h4 h4" 
+                            "p1 p1"
+                            "p2 p2"
+                            "p3 p3"
+                            "p4 p4"
+                            "p5 p5"
+                            "p6 p6"
+                            "p7 p7"
+                            "p8 p8"
+                            "p9 p9"
+                            " p10 p10"
+                            ;
+            
+            
+        } 
+    
+        
+        .val1
+        {
+            grid-area: p1;
+            margin-top: 10px;
+            font-size:larger;
+        }
+        .val2
+        {
+            grid-area: p3;
+            margin: 10px;
+            text-align: center;
+
+        }
+        .val3
+        {
+            grid-area: p4;
+            text-align: right;
+            font-size: large;
+            margin-left: 10px;
+        }
+
+        
+        .val4
+        {
+            grid-area: p6;
+            margin: 10px;
+            text-align: center;
+
+        }
+        .val5
+        {
+            grid-area: p8;
+            margin: 10px;
+
+            text-align: center;
+
+        }
+        .val6
+        {
+            grid-area: p10;
+            margin: 10px;
+
+            text-align: center;
+
+        }
+
+        .valPortada
+        {
+            grid-area: p2;
+            width: 50%;
+        
+        }
+
+        .valPortada img {
+            width: 200%;
+        }
+
+        .weapons
+        {
+            grid-area: p5;
+            margin-left:  15px;
+        }
+        
+        .headBang
+        {
+            grid-area: p7;
+           
+        }
+
+        .headBang img
+        {
+            width: 105%;
+        }
+        .enemy
+        {
+            grid-area: p9;
+        }
+        .enemy img 
+        {
+        margin-left: 100px ;        
+        }
+
+
+
 nav{
     background-color: rgb(0, 0, 0);
         
@@ -323,6 +538,220 @@ body{
                         "content content content content"
                         "footer footer footer footer";
 }
+
+
+/* SASS ThIS */
+/*Blog*/
+.contBoxBlog{
+    grid-area: content;
+    width: 100%;
+    display: grid;
+    margin:30px;
+
+    grid-template-columns: repeat(2,3fr);
+    grid-template-rows: 3 ;
+    grid-template-areas: "entry1 entry1"
+                            "entry2 entry2"                                
+                            "entry3 entry3"
+                            ;
+}   
+
+
+
+.valfBox
+{
+    grid-area:entry1 ;
+    
+}
+   
+.blogMini{
+    grid-area: entry2;
+    margin-top: 10px;
+    background-color: rgba(66, 66, 66, 0.089);
+}
+
+.miniImg{
+    width: 100%;
+}
+
+
+ /*SASS this*/
+
+ .contBox2 {
+    margin: 30px;
+    grid-area: content;
+    display: grid;
+    
+    grid-template-columns: repeat(2,2fr);
+    grid-template-rows: 5 ;
+    grid-template-areas:"h4 h4" 
+                        "p1 portada"
+                        "p2 p2"
+                        "roca ai"
+                        "p3 p3"
+                        ;
+        
+        
+    } 
+
+   
+
+    Div h4
+    {
+ grid-area: h4;
+ text-align: center;
+ font-size:xx-large;
+ font-weight: bolder;
+    }
+
+.re1
+{
+
+ grid-area: p1;
+ padding: 25px;
+
+
+}
+.re2
+{
+grid-area: p2;
+width: 2fr;
+text-align: center;
+
+
+}
+.re3
+{
+width: 3fr;
+grid-area: p3;
+text-align: center;
+
+}
+
+.portada
+{
+    grid-area: portada;
+    width: 1fr;
+    padding-left: 100px;
+}
+
+.rock{
+    grid-area: roca;
+    margin-top: 20px;
+}
+
+.ai{
+    grid-area: ai;
+    margin-top: 20px;
+}
+
+
+/* ValdarisCont 3*/
+ .contBox3 {
+        margin: 35px;
+        grid-area: content;
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: 10 ;
+        grid-template-areas:"h4 h4" 
+                            "p1 p1"
+                            "p2 p2"
+                            "p3 p3"
+                            "p4 p4"
+                            "p5 p5"
+                            "p6 p6"
+                            "p7 p7"
+                            "p8 p8"
+                            "p9 p9"
+                            " p10 p10"
+                            ;
+            
+            
+        } 
+    
+        
+        .val1
+        {
+            grid-area: p1;
+            margin-top: 10px;
+            font-size:larger;
+        }
+        .val2
+        {
+            grid-area: p3;
+            margin: 10px;
+            text-align: center;
+
+        }
+        .val3
+        {
+            grid-area: p4;
+            text-align: right;
+            font-size: large;
+            margin-left: 10px;
+        }
+
+        
+        .val4
+        {
+            grid-area: p6;
+            margin: 10px;
+            text-align: center;
+
+        }
+        .val5
+        {
+            grid-area: p8;
+            margin: 10px;
+
+            text-align: center;
+
+        }
+        .val6
+        {
+            grid-area: p10;
+            margin: 10px;
+
+            text-align: center;
+
+        }
+
+        .valPortada
+        {
+            grid-area: p2;
+            width: 50%;
+        
+        }
+
+        .valPortada img {
+            width: 200%;
+        }
+
+        .weapons
+        {
+            grid-area: p5;
+            margin-left:  75px;
+        }
+        
+        .headBang
+        {
+            grid-area: p7;
+           
+        }
+
+        .headBang img
+        {
+            width: 105%;
+        }
+        .enemy
+        {
+            grid-area: p9;
+        }
+        .enemy img 
+        {
+        margin-left: 150px ;        
+        }
+
 nav{
     background-color: rgb(0, 0, 0);
         
@@ -605,6 +1034,8 @@ display: block;
                             "footer footer footer footer";
     }
 
+
+    
 /*SASS this*/
 
 .reP1
