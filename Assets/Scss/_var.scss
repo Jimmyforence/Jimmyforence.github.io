@@ -1,0 +1,22 @@
+
+@mixin grid($columns,$rows,$area){
+    grid-template-columns:$columns;
+    grid-template-rows: $rows;
+    grid-template-areas:$area;
+}
+
+$colorabuguet: rgb(96, 184, 243);
+$darkabuguet: rgb(3, 59, 97);
+
+
+$product:(
+margin: 40px,
+grid-area: content,
+display: flex,
+flex-direction: column,
+justify-content: space-evenly,
+width: 30%,
+text-align: center,
+);
+
+

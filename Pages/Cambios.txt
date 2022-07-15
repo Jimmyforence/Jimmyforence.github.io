@@ -1,0 +1,4 @@
+SEO:
+
+Se agrego los titulos a todas las páginas.
+Se agrego una descripción a la pagina principal
