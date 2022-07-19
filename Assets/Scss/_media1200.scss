@@ -4,22 +4,136 @@
 {
     .home{  
         display: grid;
+        
+        background-color: rgb(255, 255, 255);
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: 4 ;
         grid-template-areas: "nav nav nav nav"
                             "content content content aside"
+                            "cont2 cont2 cont2 aside"
                             "footer footer footer footer";
     }
 
- 
-    body h1{
-        margin-top: 1000px;
+    .sonidoBoom
+    {
+        display: grid;
+        grid-area: content;
+        width: 30%;
+        height: 30px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 3 ;
+        grid-template-areas: "title title "
+                            "subtitle subtitle"
+                            "desc desc"
+                             ;
+    }
 
+.titSonido{
+    display: grid;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    grid-area: title;
+    margin: 10px;
+
+}
+
+.subsonido{
+    display: grid;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    grid-area: subtitle;
+    margin: 10px;
+}
+.parraf
+{
+    display: grid;
+    color: black;
+    background-color: rgb(160, 35, 35);
+    grid-area: desc;
+    margin: 10px;
+}
+.contPlayer
+{   
+    display: grid;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 40px;
+  
+    grid-area: cont2;
+    grid-template-columns: repeat(2,3fr);
+    grid-template-rows: 4 ;
+    grid-template-areas: "img tit"
+                        "img subti"
+                        "img desc"
+                        "btn btn";
+                    }
+
+    
+    .playerImg
+    {
+      grid-area: img;
+      display: grid;
+
+    }
+    .titulo
+    {
+        grid-area: tit;
+        display: grid;
+        margin: 15px;
+        padding: 10px;
+    }
+    .episode
+    {
+        grid-area: subti;
+        display: grid;
+        margin: 5px;
+        padding: 10px;
+        font-weight: 400;
+        }
+    .descript
+    {
+        grid-area: desc;
+        display: grid;
+        margin: 2px;
+        padding: 10px;
+        font-weight: 300;
+        font-style: italic;
+    }
+       .pIImg
+    {
+
+        width: 300px;
+        
+    }
+    .mediaPlay
+    {display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 250%;
+        margin-top: 5px;
+    
+    }
+
+    .pImg
+    {
+        width: 30px ;
+      
+   }
+
+
+
+    body h1{
+        margin-top: 10px;
+       
     }
 
 /*Blog*/
 .contBoxBlog{
-    @extend .contBox;
+    margin: 30px;
+        grid-area: content;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
 
 
 @include grid(repeat(2,3fr),3,"entry1 entry1""entry2 entry2""entry3 entry3");
@@ -30,8 +144,13 @@
 
 .valfBox
 {
-    grid-area:entry1 ;
-    
+    grid-area:entry1;
+    width: 100%;
+    margin-top: 10px;
+    .valfaris
+    {
+        width: 100%;
+    }
 }
    
 .blogMini{
@@ -48,7 +167,11 @@
  /*SASS this*/
 
  .contBox2 {
-    @extend .contBox;
+    margin: 30px;
+    grid-area: content;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     
     grid-template-columns: repeat(2,2fr);
     grid-template-rows: 5 ;
@@ -116,7 +239,11 @@ text-align: center;
 
 /* ValdarisCont 3*/
  .contBox3 {
-        @extend .contBox;
+    margin: 30px;
+    grid-area: content;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
         display: grid;
         grid-template-columns: repeat(2,2fr);
         grid-template-rows: 10 ;
@@ -288,7 +415,7 @@ text-align: center;
         text-align: center;
         grid-area: nav;
         position: fixed;
-        border: 10;
+        border: 0;
         margin-bottom: 15px;
         width: 100%; 
     }
@@ -352,6 +479,7 @@ text-align: center;
        text-overflow: inherit;
         float: right;
         list-style: none;
+      
         
         background-color: rgb(0, 0, 0);
         grid-area: aside;
@@ -360,12 +488,12 @@ text-align: center;
 
 
 
-        
+       
     
     
      body div {
         background-color: rgb(255, 255, 255);
-        width: 89%;
+        width: 100%;
         
     }
     
@@ -376,14 +504,7 @@ text-align: center;
     }
     
     
-    .sonidoBoom{
-       
-       grid-area:content;
-       width: 100%;
-       margin-top: 15px;
-       
-       
-    }
+    
     
     .contBox {
         margin: 30px;
@@ -456,6 +577,8 @@ text-align: center;
         height: 60%
     }
     
-    
+    .form{
+grid-area: content;
+    }
 
 }

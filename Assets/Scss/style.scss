@@ -1,4 +1,11 @@
 
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    
+}
 
 @import "var";
 @import "media779";
@@ -6,7 +13,3 @@
 @import "media1024";
 @import "media1200";
 
-.title{
-    margin-top: 40px;
-    grid-area: content;
-}
