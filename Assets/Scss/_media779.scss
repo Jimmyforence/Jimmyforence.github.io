@@ -11,11 +11,125 @@ body{
 .home{  
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 1fr,1fr,1fr,50px;
+    grid-template-rows: 4;
     grid-template-areas: "nav nav nav nav"
                         "content content content content"
+                        "cont2 cont2 cont2 aside"
                         "footer footer footer footer";
 }
+
+
+.sonidoBoom
+{
+    display: grid;
+    grid-area: content;
+    width: 30%;
+    height: 30px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 3 ;
+    grid-template-areas: "title title "
+                        "subtitle subtitle"
+                        "desc desc"
+                         ;
+}
+
+.titSonido{
+display: grid;
+color: black;
+background-color: rgb(255, 255, 255);
+grid-area: title;
+margin: 10px;
+
+}
+
+.subsonido{
+display: grid;
+color: black;
+background-color: rgb(255, 255, 255);
+grid-area: subtitle;
+margin: 10px;
+}
+.parraf
+{
+display: grid;
+color: black;
+background-color: rgb(160, 35, 35);
+grid-area: desc;
+margin: 10px;
+}
+.contPlayer
+{   
+display: grid;
+flex-direction: column;
+width: 100%;
+margin-top: 20px;
+
+grid-area: cont2;
+grid-template-columns: repeat(2,3fr);
+grid-template-rows: 4 ;
+grid-template-areas: "img tit"
+                    "img subti"
+                    "img desc"
+                    "btn btn";
+                }
+
+
+.playerImg
+{
+  grid-area: img;
+  display: grid;
+
+}
+.titulo
+{
+    width: 250px;
+    
+    grid-area: tit;
+    display: grid;
+    margin: 15px;
+    padding: 10px;
+}
+.episode
+{
+    width: 250px;
+    grid-area: subti;
+    display: grid;
+    margin: 5px;
+    padding: 10px;
+    font-weight: 400;
+    }
+.descript
+{
+    width: 250px;
+    grid-area: desc;
+    width: auto;
+    display: grid;
+    margin: 2px;
+    padding: 10px;
+    font-weight: 300;
+    font-style: italic;
+}
+   .pIImg
+{
+
+    width: 100%;
+    
+}
+.mediaPlay
+{display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 350%;
+    margin-top: 5px;
+
+}
+
+.pImg
+{
+    width: 30px ;
+  
+}
+
 
 /* SASS ThIS */
 /*Blog*/
@@ -306,6 +420,7 @@ footer{
     background-color: black;
     grid-area: footer;
     color: aliceblue;
+    width: 200%;
 }
 
 

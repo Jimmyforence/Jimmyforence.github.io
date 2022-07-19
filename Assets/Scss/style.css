@@ -1,17 +1,102 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Montserrat';
-  font-weight: 600; }
+  font-family: "Montserrat";
+  font-weight: 600;
+}
 
 @media (max-width: 779px) {
   body {
-    background-color: white; }
+    background-color: rgb(255, 255, 255);
+  }
   .home {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr,1fr,1fr,50px;
-    grid-template-areas: "nav nav nav nav" "content content content content" "footer footer footer footer"; }
+    grid-template-rows: 4;
+    grid-template-areas: "nav nav nav nav" "content content content content" "cont2 cont2 cont2 aside" "footer footer footer footer";
+  }
+  .sonidoBoom {
+    display: grid;
+    grid-area: content;
+    width: 30%;
+    height: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3;
+    grid-template-areas: "title title " "subtitle subtitle" "desc desc";
+  }
+  .titSonido {
+    display: grid;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    grid-area: title;
+    margin: 10px;
+  }
+  .subsonido {
+    display: grid;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    grid-area: subtitle;
+    margin: 10px;
+  }
+  .parraf {
+    display: grid;
+    color: black;
+    background-color: rgb(160, 35, 35);
+    grid-area: desc;
+    margin: 10px;
+  }
+  .contPlayer {
+    display: grid;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    grid-area: cont2;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: 4;
+    grid-template-areas: "img tit" "img subti" "img desc" "btn btn";
+  }
+  .playerImg {
+    grid-area: img;
+    display: grid;
+  }
+  .titulo {
+    width: 250px;
+    grid-area: tit;
+    display: grid;
+    margin: 15px;
+    padding: 10px;
+  }
+  .episode {
+    width: 250px;
+    grid-area: subti;
+    display: grid;
+    margin: 5px;
+    padding: 10px;
+    font-weight: 400;
+  }
+  .descript {
+    width: 250px;
+    grid-area: desc;
+    width: auto;
+    display: grid;
+    margin: 2px;
+    padding: 10px;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .pIImg {
+    width: 100%;
+  }
+  .mediaPlay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 350%;
+    margin-top: 5px;
+  }
+  .pImg {
+    width: 30px;
+  }
   /* SASS ThIS */
   /*Blog*/
   .contBoxBlog {
@@ -21,15 +106,19 @@
     margin: 30px;
     grid-template-columns: repeat(2, 3fr);
     grid-template-rows: 3;
-    grid-template-areas: "entry1 entry1" "entry2 entry2"                                 "entry3 entry3"; }
+    grid-template-areas: "entry1 entry1" "entry2 entry2" "entry3 entry3";
+  }
   .valfBox {
-    grid-area: entry1; }
+    grid-area: entry1;
+  }
   .blogMini {
     grid-area: entry2;
     margin-top: 10px;
-    background-color: rgba(66, 66, 66, 0.089); }
+    background-color: rgba(66, 66, 66, 0.089);
+  }
   .miniImg {
-    width: 100%; }
+    width: 100%;
+  }
   /*SASS this*/
   .contBox2 {
     margin: 30px;
@@ -37,33 +126,41 @@
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: 5;
-    grid-template-areas: "h4 h4"  "p1 portada" "p2 p2" "roca ai" "p3 p3"; }
+    grid-template-areas: "h4 h4" "p1 portada" "p2 p2" "roca ai" "p3 p3";
+  }
   Div h4 {
     grid-area: h4;
     text-align: center;
     font-size: xx-large;
-    font-weight: bolder; }
+    font-weight: bolder;
+  }
   .re1 {
     grid-area: p1;
-    padding: 25px; }
+    padding: 25px;
+  }
   .re2 {
     grid-area: p2;
     width: 2fr;
-    text-align: center; }
+    text-align: center;
+  }
   .re3 {
     width: 3fr;
     grid-area: p3;
-    text-align: center; }
+    text-align: center;
+  }
   .portada {
     grid-area: portada;
     width: 1fr;
-    padding-left: 100px; }
+    padding-left: 100px;
+  }
   .rock {
     grid-area: roca;
-    margin-top: 20px; }
+    margin-top: 20px;
+  }
   .ai {
     grid-area: ai;
-    margin-top: 20px; }
+    margin-top: 20px;
+  }
   /* ValdarisCont 3*/
   .contBox3 {
     margin: 35px;
@@ -71,50 +168,64 @@
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: 10;
-    grid-template-areas: "h4 h4"  "p1 p1" "p2 p2" "p3 p3" "p4 p4" "p5 p5" "p6 p6" "p7 p7" "p8 p8" "p9 p9" " p10 p10"; }
+    grid-template-areas: "h4 h4" "p1 p1" "p2 p2" "p3 p3" "p4 p4" "p5 p5" "p6 p6" "p7 p7" "p8 p8" "p9 p9" " p10 p10";
+  }
   .val1 {
     grid-area: p1;
     margin-top: 10px;
-    font-size: larger; }
+    font-size: larger;
+  }
   .val2 {
     grid-area: p3;
     margin: 10px;
-    text-align: center; }
+    text-align: center;
+  }
   .val3 {
     grid-area: p4;
     text-align: right;
     font-size: large;
-    margin-left: 10px; }
+    margin-left: 10px;
+  }
   .val4 {
     grid-area: p6;
     margin: 10px;
-    text-align: center; }
+    text-align: center;
+  }
   .val5 {
     grid-area: p8;
     margin: 10px;
-    text-align: center; }
+    text-align: center;
+  }
   .val6 {
     grid-area: p10;
     margin: 10px;
-    text-align: center; }
+    text-align: center;
+  }
   .valPortada {
     grid-area: p2;
-    width: 50%; }
+    width: 50%;
+  }
   .valPortada img {
-    width: 200%; }
+    width: 200%;
+  }
   .weapons {
     grid-area: p5;
-    margin-left: 15px; }
+    margin-left: 15px;
+  }
   .headBang {
-    grid-area: p7; }
+    grid-area: p7;
+  }
   .headBang img {
-    width: 105%; }
+    width: 105%;
+  }
   .enemy {
-    grid-area: p9; }
+    grid-area: p9;
+  }
   .enemy img {
-    margin-left: 100px; }
+    margin-left: 100px;
+  }
   nav {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: aliceblue;
     text-align: center;
     grid-area: nav;
@@ -123,46 +234,57 @@
     margin-bottom: 5px;
     z-index: 9000;
     width: 100%;
-    font-size: medium; }
+    font-size: medium;
+  }
   form {
     grid-area: content;
     width: 1fr;
     margin-left: 20px;
-    margin-top: 13px; }
+    margin-top: 13px;
+  }
   form textarea {
-    width: 478px; }
+    width: 478px;
+  }
   a {
-    color: white;
-    font-size: 10px; }
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+  }
   .logo {
     width: 14px;
     position: absolute;
     top: 3px;
-    left: 5px; }
+    left: 5px;
+  }
   .twitch {
     position: absolute;
     width: 14px;
     right: 10px;
-    top: 3px; }
+    top: 3px;
+  }
   .twitter {
     position: absolute;
     width: 14px;
     right: 25px;
-    top: 3px; }
+    top: 3px;
+  }
   .insta {
     position: absolute;
     width: 14px;
     right: 40px;
-    top: 3px; }
+    top: 3px;
+  }
   .youtube {
     position: absolute;
     width: 14px;
     right: 55px;
-    top: 3px; }
+    top: 3px;
+  }
   footer {
     background-color: black;
     grid-area: footer;
-    color: aliceblue; }
+    color: aliceblue;
+    width: 200%;
+  }
   /* Store*/
   /*Store */
   .storeBox {
@@ -170,7 +292,8 @@
     grid-area: content;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+  }
   .productA {
     margin: 40px;
     grid-area: content;
@@ -178,7 +301,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+  }
   .productB {
     margin: 40px;
     grid-area: content;
@@ -186,7 +310,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+  }
   .productC {
     margin: 40px;
     grid-area: content;
@@ -194,62 +319,77 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+  }
   /*Content*/
   .contBox {
     margin: 12px;
     grid-area: content;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+  }
   .retro__img {
-    width: 100%; }
+    width: 100%;
+  }
   .retro__tit {
-    margin-top: 13px; }
+    margin-top: 13px;
+  }
   .mini__img {
-    width: 100%; }
+    width: 100%;
+  }
   .mini__tit {
-    margin-top: 13px; }
+    margin-top: 13px;
+  }
   .perfect__img {
-    width: 100%; }
+    width: 100%;
+  }
   .perfect__tit {
-    margin-top: 13px; }
+    margin-top: 13px;
+  }
   .valfaris {
-    width: 100%; }
+    width: 100%;
+  }
   .valfaris__text {
-    width: 100%; }
+    width: 100%;
+  }
   /*Burger menu */
   .burguer {
     margin-top: 45px;
     width: 45px;
     height: 45px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     right: 0px;
     top: 5px;
     z-index: 9000;
     cursor: pointer;
     position: fixed;
-    grid-area: content; }
+    grid-area: content;
+  }
   .burguer span {
     display: block;
     width: 100%;
-    background: #3693b1;
+    background: rgb(54, 147, 177);
     height: 10px;
     margin-top: 3px;
     transform-origin: 0px 100%;
     transition: all 200ms;
-    grid-area: content; }
+    grid-area: content;
+  }
   .activeline1 {
-    transform: rotate(45deg) translate(0px, -6px); }
+    transform: rotate(45deg) translate(0px, -6px);
+  }
   .activeline2 {
     opacity: 0;
-    margin-left: -30px; }
+    margin-left: -30px;
+  }
   .activeline3 {
-    Transform: rotate(-45deg) translate(6px, 8px); }
+    Transform: rotate(-45deg) translate(6px, 8px);
+  }
   .logins {
     flex-direction: column;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     font-size: 30px;
     justify-content: space-evenly;
     position: fixed;
@@ -257,30 +397,114 @@
     z-index: 9000;
     top: 55px;
     right: 43px;
-    display: block; }
+    display: block;
+  }
   .social a {
     flex-direction: column;
     width: 10px;
-    background-color: #f5f0f0;
+    background-color: rgb(245, 240, 240);
     font-size: 35px;
-    float: right; }
+    float: right;
+  }
   aside {
-    display: none; }
+    display: none;
+  }
   .sidekick {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: aliceblue;
     margin-top: 10px;
-    display: block; } }
-
+    display: block;
+  }
+}
 /*tablet vertical */
 @media (min-width: 780px) {
   body {
-    background-color: white; }
+    background-color: rgb(255, 255, 255);
+  }
   .home {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr,1fr,1fr,1fr;
-    grid-template-areas: "nav nav nav nav" "content content content content" "footer footer footer footer"; }
+    grid-template-rows: 4;
+    grid-template-areas: "nav nav nav nav" "content content content aside" "cont2 cont2 cont2 aside" "footer footer footer footer";
+  }
+  .sonidoBoom {
+    display: grid;
+    grid-area: content;
+    width: 30%;
+    height: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3;
+    grid-template-areas: "title title " "subtitle subtitle" "desc desc";
+  }
+  .titSonido {
+    display: grid;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    grid-area: title;
+    margin: 10px;
+  }
+  .subsonido {
+    display: grid;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    grid-area: subtitle;
+    margin: 10px;
+  }
+  .parraf {
+    display: grid;
+    color: black;
+    background-color: rgb(160, 35, 35);
+    grid-area: desc;
+    margin: 10px;
+  }
+  .contPlayer {
+    display: grid;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    grid-area: cont2;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: 4;
+    grid-template-areas: "img tit" "img subti" "img desc" "btn btn";
+  }
+  .playerImg {
+    grid-area: img;
+    display: grid;
+  }
+  .titulo {
+    grid-area: tit;
+    display: grid;
+    margin: 15px;
+    padding: 10px;
+  }
+  .episode {
+    grid-area: subti;
+    display: grid;
+    margin: 5px;
+    padding: 10px;
+    font-weight: 400;
+  }
+  .descript {
+    grid-area: desc;
+    display: grid;
+    margin: 2px;
+    padding: 10px;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .pIImg {
+    width: 300px;
+  }
+  .mediaPlay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 250%;
+    margin-top: 5px;
+  }
+  .pImg {
+    width: 30px;
+  }
   /* SASS ThIS */
   /*Blog*/
   .contBoxBlog {
@@ -290,15 +514,19 @@
     margin: 30px;
     grid-template-columns: repeat(2, 3fr);
     grid-template-rows: 3;
-    grid-template-areas: "entry1 entry1" "entry2 entry2" "entry3 entry3"; }
+    grid-template-areas: "entry1 entry1" "entry2 entry2" "entry3 entry3";
+  }
   .valfBox {
-    grid-area: entry1; }
+    grid-area: entry1;
+  }
   .blogMini {
     grid-area: entry2;
     margin-top: 10px;
-    background-color: rgba(66, 66, 66, 0.089); }
+    background-color: rgba(66, 66, 66, 0.089);
+  }
   .miniImg {
-    width: 100%; }
+    width: 100%;
+  }
   /*SASS this*/
   .contBox2 {
     margin: 30px;
@@ -306,33 +534,41 @@
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: 5;
-    grid-template-areas: "h4 h4"  "p1 portada" "p2 p2" "roca ai" "p3 p3"; }
+    grid-template-areas: "h4 h4" "p1 portada" "p2 p2" "roca ai" "p3 p3";
+  }
   Div h4 {
     grid-area: h4;
     text-align: center;
     font-size: xx-large;
-    font-weight: bolder; }
+    font-weight: bolder;
+  }
   .re1 {
     grid-area: p1;
-    padding: 25px; }
+    padding: 25px;
+  }
   .re2 {
     grid-area: p2;
     width: 2fr;
-    text-align: center; }
+    text-align: center;
+  }
   .re3 {
     width: 3fr;
     grid-area: p3;
-    text-align: center; }
+    text-align: center;
+  }
   .portada {
     grid-area: portada;
     width: 1fr;
-    padding-left: 100px; }
+    padding-left: 100px;
+  }
   .rock {
     grid-area: roca;
-    margin-top: 20px; }
+    margin-top: 20px;
+  }
   .ai {
     grid-area: ai;
-    margin-top: 20px; }
+    margin-top: 20px;
+  }
   /* ValdarisCont 3*/
   .contBox3 {
     margin: 35px;
@@ -340,50 +576,64 @@
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: 10;
-    grid-template-areas: "h4 h4"  "p1 p1" "p2 p2" "p3 p3" "p4 p4" "p5 p5" "p6 p6" "p7 p7" "p8 p8" "p9 p9" " p10 p10"; }
+    grid-template-areas: "h4 h4" "p1 p1" "p2 p2" "p3 p3" "p4 p4" "p5 p5" "p6 p6" "p7 p7" "p8 p8" "p9 p9" " p10 p10";
+  }
   .val1 {
     grid-area: p1;
     margin-top: 10px;
-    font-size: larger; }
+    font-size: larger;
+  }
   .val2 {
     grid-area: p3;
     margin: 10px;
-    text-align: center; }
+    text-align: center;
+  }
   .val3 {
     grid-area: p4;
     text-align: right;
     font-size: large;
-    margin-left: 10px; }
+    margin-left: 10px;
+  }
   .val4 {
     grid-area: p6;
     margin: 10px;
-    text-align: center; }
+    text-align: center;
+  }
   .val5 {
     grid-area: p8;
     margin: 10px;
-    text-align: center; }
+    text-align: center;
+  }
   .val6 {
     grid-area: p10;
     margin: 10px;
-    text-align: center; }
+    text-align: center;
+  }
   .valPortada {
     grid-area: p2;
-    width: 50%; }
+    width: 50%;
+  }
   .valPortada img {
-    width: 200%; }
+    width: 200%;
+  }
   .weapons {
     grid-area: p5;
-    margin-left: 75px; }
+    margin-left: 75px;
+  }
   .headBang {
-    grid-area: p7; }
+    grid-area: p7;
+  }
   .headBang img {
-    width: 105%; }
+    width: 105%;
+  }
   .enemy {
-    grid-area: p9; }
+    grid-area: p9;
+  }
   .enemy img {
-    margin-left: 150px; }
+    margin-left: 150px;
+  }
   nav {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: aliceblue;
     text-align: center;
     grid-area: nav;
@@ -392,53 +642,65 @@
     margin-bottom: 5px;
     width: 100%;
     z-index: 9000;
-    font-size: medium; }
+    font-size: medium;
+  }
   form {
     grid-area: content;
     width: 1fr;
     margin-left: 20px;
-    margin-top: 13px; }
+    margin-top: 13px;
+  }
   form textarea {
-    width: 478px; }
+    width: 478px;
+  }
   a {
-    color: white;
-    font-size: 30px; }
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+  }
   .logo {
     width: 25px;
     position: absolute;
     top: 7px;
-    left: 10px; }
+    left: 10px;
+  }
   .twitch {
     position: absolute;
     width: 25px;
     right: 10px;
-    top: 7px; }
+    top: 7px;
+  }
   .twitter {
     position: absolute;
     width: 25px;
     right: 35px;
-    top: 7px; }
+    top: 7px;
+  }
   .insta {
     position: absolute;
     width: 25px;
     right: 60px;
-    top: 7px; }
+    top: 7px;
+  }
   .youtube {
     position: absolute;
     width: 25px;
     right: 85px;
-    top: 7px; }
+    top: 7px;
+  }
   footer {
     background-color: black;
     grid-area: footer;
-    color: aliceblue; }
+    color: aliceblue;
+    width: 120%;
+  }
   /*Store */
   .storeBox {
     margin: 12px;
     grid-area: content;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+  }
   .productA {
     margin: 40px;
     grid-area: content;
@@ -446,7 +708,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+  }
   .productB {
     margin: 40px;
     grid-area: content;
@@ -454,7 +717,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+  }
   .productC {
     margin: 40px;
     grid-area: content;
@@ -462,62 +726,77 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+  }
   /*Content*/
   .contBox {
     margin: 40px;
     grid-area: content;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+  }
   .retro__img {
-    width: 100%; }
+    width: 100%;
+  }
   .retro__tit {
-    margin-top: 13px; }
+    margin-top: 13px;
+  }
   .mini__img {
-    width: 100%; }
+    width: 100%;
+  }
   .mini__tit {
-    margin-top: 13px; }
+    margin-top: 13px;
+  }
   .perfect__img {
-    width: 100%; }
+    width: 100%;
+  }
   .perfect__tit {
-    margin-top: 13px; }
+    margin-top: 13px;
+  }
   .valfaris {
-    width: 100%; }
+    width: 100%;
+  }
   .valfaris__text {
-    width: 100%; }
+    width: 100%;
+  }
   /*Burger menu */
   .burguer {
     margin-top: 45px;
     width: 45px;
     height: 45px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     right: 0px;
     top: 5px;
     z-index: 9000;
     cursor: pointer;
     position: fixed;
-    grid-area: content; }
+    grid-area: content;
+  }
   .burguer span {
     display: block;
     width: 100%;
-    background: #3693b1;
+    background: rgb(54, 147, 177);
     height: 10px;
     margin-top: 3px;
     transform-origin: 0px 100%;
     transition: all 200ms;
-    grid-area: content; }
+    grid-area: content;
+  }
   .activeline1 {
-    transform: rotate(45deg) translate(0px, -6px); }
+    transform: rotate(45deg) translate(0px, -6px);
+  }
   .activeline2 {
     opacity: 0;
-    margin-left: -30px; }
+    margin-left: -30px;
+  }
   .activeline3 {
-    Transform: rotate(-45deg) translate(6px, 8px); }
+    Transform: rotate(-45deg) translate(6px, 8px);
+  }
   .logins {
     flex-direction: column;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     font-size: 30px;
     justify-content: space-evenly;
     position: fixed;
@@ -525,27 +804,32 @@
     z-index: 9000;
     top: 55px;
     right: 43px;
-    display: block; }
+    display: block;
+  }
   .social a {
     flex-direction: column;
     width: 10px;
-    background-color: #f5f0f0;
+    background-color: rgb(245, 240, 240);
     font-size: 35px;
-    float: right; }
+    float: right;
+  }
   aside {
-    display: none; }
+    display: none;
+  }
   .sidekick {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: aliceblue;
     margin-top: 10px;
-    display: block; } }
-
+    display: block;
+  }
+}
 @media (min-width: 1024px) {
   .home {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr,1fr,1fr,50px;
-    grid-template-areas: "nav nav nav nav" "content content content aside" "cont2 cont2 cont2 aside" "footer footer footer footer"; }
+    grid-template-rows: 4;
+    grid-template-areas: "nav nav nav nav" "content content content aside" "cont2 cont2 cont2 aside" "footer footer footer footer";
+  }
   /*Podcast*/
   .sonidoBoom {
     display: grid;
@@ -554,25 +838,29 @@
     height: 30px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 3;
-    grid-template-areas: "title title " "subtitle subtitle" "desc desc"; }
+    grid-template-areas: "title title " "subtitle subtitle" "desc desc";
+  }
   .titSonido {
     display: grid;
     color: black;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     grid-area: title;
-    margin: 10px; }
+    margin: 10px;
+  }
   .subsonido {
     display: grid;
     color: black;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     grid-area: subtitle;
-    margin: 10px; }
+    margin: 10px;
+  }
   .parraf {
     display: grid;
     color: black;
-    background-color: #a02323;
+    background-color: rgb(160, 35, 35);
     grid-area: desc;
-    margin: 10px; }
+    margin: 10px;
+  }
   .contPlayer {
     display: grid;
     flex-direction: column;
@@ -581,55 +869,67 @@
     grid-area: cont2;
     grid-template-columns: repeat(2, 3fr);
     grid-template-rows: 4;
-    grid-template-areas: "img tit" "img subti" "img desc" "btn btn"; }
+    grid-template-areas: "img tit" "img subti" "img desc" "btn btn";
+  }
   .playerImg {
     grid-area: img;
-    display: grid; }
+    display: grid;
+  }
   .titulo {
     grid-area: tit;
     display: grid;
     margin: 15px;
-    padding: 10px; }
+    padding: 10px;
+  }
   .episode {
     grid-area: subti;
     display: grid;
     margin: 5px;
     padding: 10px;
-    font-weight: 400; }
+    font-weight: 400;
+  }
   .descript {
     grid-area: desc;
     display: grid;
     margin: 2px;
     padding: 10px;
     font-weight: 300;
-    font-style: italic; }
+    font-style: italic;
+  }
   .pIImg {
-    width: 300px; }
+    width: 300px;
+  }
   .mediaPlay {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 250%;
-    margin-top: 5px; }
+    margin-top: 5px;
+  }
   .pImg {
-    width: 30px; }
+    width: 30px;
+  }
   /*SASS this*/
   .reP1 {
     width: 2fr;
-    grid-area: footer; }
+    grid-area: footer;
+  }
   .reP2 {
     width: 1fr;
-    grid-area: footer; }
+    grid-area: footer;
+  }
   .reP3 {
     width: 3fr;
-    grid-area: footer; }
+    grid-area: footer;
+  }
   /*Store */
   .storeBox {
     margin: 12px;
     grid-area: content;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+  }
   .productA {
     margin: 40px;
     grid-area: content;
@@ -637,7 +937,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 30%;
-    text-align: center; }
+    text-align: center;
+  }
   .productB {
     margin: 40px;
     grid-area: content;
@@ -645,7 +946,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 30%;
-    text-align: center; }
+    text-align: center;
+  }
   .productC {
     margin: 40px;
     grid-area: content;
@@ -653,16 +955,20 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 30%;
-    text-align: center; }
+    text-align: center;
+  }
   .burguer {
-    display: none; }
+    display: none;
+  }
   body h2 {
-    text-align: center; }
+    text-align: center;
+  }
   h5 {
     background-color: black;
-    color: white; }
+    color: rgb(255, 255, 255);
+  }
   nav {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: aliceblue;
     text-align: center;
     grid-area: nav;
@@ -670,41 +976,49 @@
     border: 10;
     font-size: 25px;
     margin-bottom: 15px;
-    width: 100%; }
+    width: 100%;
+  }
   a {
-    color: white;
-    font-size: 30px; }
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+  }
   .logo {
     width: 25px;
     position: absolute;
     top: 7px;
-    left: 10px; }
+    left: 10px;
+  }
   .twitch {
     position: absolute;
     width: 25px;
     right: 10px;
-    top: 7px; }
+    top: 7px;
+  }
   .twitter {
     position: absolute;
     width: 25px;
     right: 35px;
-    top: 7px; }
+    top: 7px;
+  }
   .insta {
     position: absolute;
     width: 25px;
     right: 60px;
-    top: 7px; }
+    top: 7px;
+  }
   .youtube {
     position: absolute;
     width: 25px;
     right: 85px;
-    top: 7px; }
+    top: 7px;
+  }
   footer {
     width: 100%;
     grid-area: footer;
-    margin-top: 25px; }
+    margin-top: 25px;
+  }
   aside {
-    color: snow;
+    color: rgb(255, 250, 250);
     width: 100%;
     height: 100%;
     margin: 37px;
@@ -713,66 +1027,82 @@
     float: right;
     list-style: none;
     font-size: px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     grid-area: aside;
-    display: block; }
+    display: block;
+  }
   body div {
-    background-color: white;
-    width: 89%; }
+    background-color: rgb(255, 255, 255);
+    width: 89%;
+  }
   div .descript {
     margin: 15px;
-    padding: 10px; }
+    padding: 10px;
+  }
   .sonidoBoom {
     grid-area: content;
     width: 100%;
-    margin-top: 15px; }
+    margin-top: 15px;
+  }
   .contBox {
     margin: 36px;
     grid-area: content;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+  }
   .mini {
     width: 30%;
-    font-size: initial; }
+    font-size: initial;
+  }
   .mini__tit {
     text-align: center;
     font-size: 100%;
     background-color: rgba(0, 255, 255, 0.055);
-    height: fit-content; }
+    height: fit-content;
+  }
   .mini__img {
     width: 100%;
-    height: 60%; }
+    height: 60%;
+  }
   .mini div {
-    width: 30%; }
+    width: 30%;
+  }
   .retro {
-    width: 30%; }
+    width: 30%;
+  }
   .retro__tit {
     text-align: center;
     font: size 100%;
     height: fit-content;
-    background-color: rgba(0, 255, 255, 0.055); }
+    background-color: rgba(0, 255, 255, 0.055);
+  }
   .retro__img {
     width: 100%;
-    height: 60%; }
+    height: 60%;
+  }
   .perfect {
-    width: 30%; }
+    width: 30%;
+  }
   .perfect__tit {
     text-align: center;
     font-size: 18px;
     background-color: rgba(0, 255, 255, 0.055);
-    height: fit-content; }
+    height: fit-content;
+  }
   .perfect__img {
     width: 100%;
-    height: 60%; } }
-
+    height: 60%;
+  }
+}
 @media (min-width: 1200px) {
   .home {
     display: grid;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 4;
-    grid-template-areas: "nav nav nav nav" "content content content aside" "cont2 cont2 cont2 aside" "footer footer footer footer"; }
+    grid-template-areas: "nav nav nav nav" "content content content aside" "cont2 cont2 cont2 aside" "footer footer footer footer";
+  }
   .sonidoBoom {
     display: grid;
     grid-area: content;
@@ -780,25 +1110,29 @@
     height: 30px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 3;
-    grid-template-areas: "title title " "subtitle subtitle" "desc desc"; }
+    grid-template-areas: "title title " "subtitle subtitle" "desc desc";
+  }
   .titSonido {
     display: grid;
     color: black;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     grid-area: title;
-    margin: 10px; }
+    margin: 10px;
+  }
   .subsonido {
     display: grid;
     color: black;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     grid-area: subtitle;
-    margin: 10px; }
+    margin: 10px;
+  }
   .parraf {
     display: grid;
     color: black;
-    background-color: #a02323;
+    background-color: rgb(160, 35, 35);
     grid-area: desc;
-    margin: 10px; }
+    margin: 10px;
+  }
   .contPlayer {
     display: grid;
     flex-direction: column;
@@ -807,40 +1141,49 @@
     grid-area: cont2;
     grid-template-columns: repeat(2, 3fr);
     grid-template-rows: 4;
-    grid-template-areas: "img tit" "img subti" "img desc" "btn btn"; }
+    grid-template-areas: "img tit" "img subti" "img desc" "btn btn";
+  }
   .playerImg {
     grid-area: img;
-    display: grid; }
+    display: grid;
+  }
   .titulo {
     grid-area: tit;
     display: grid;
     margin: 15px;
-    padding: 10px; }
+    padding: 10px;
+  }
   .episode {
     grid-area: subti;
     display: grid;
     margin: 5px;
     padding: 10px;
-    font-weight: 400; }
+    font-weight: 400;
+  }
   .descript {
     grid-area: desc;
     display: grid;
     margin: 2px;
     padding: 10px;
     font-weight: 300;
-    font-style: italic; }
+    font-style: italic;
+  }
   .pIImg {
-    width: 300px; }
+    width: 300px;
+  }
   .mediaPlay {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 250%;
-    margin-top: 5px; }
+    margin-top: 5px;
+  }
   .pImg {
-    width: 30px; }
+    width: 30px;
+  }
   body h1 {
-    margin-top: 10px; }
+    margin-top: 10px;
+  }
   /*Blog*/
   .contBoxBlog {
     margin: 30px;
@@ -850,19 +1193,24 @@
     justify-content: space-evenly;
     grid-template-columns: repeat(2, 3fr);
     grid-template-rows: 3;
-    grid-template-areas: "entry1 entry1" "entry2 entry2" "entry3 entry3"; }
+    grid-template-areas: "entry1 entry1" "entry2 entry2" "entry3 entry3";
+  }
   .valfBox {
     grid-area: entry1;
     width: 100%;
-    margin-top: 10px; }
-    .valfBox .valfaris {
-      width: 100%; }
+    margin-top: 10px;
+  }
+  .valfBox .valfaris {
+    width: 100%;
+  }
   .blogMini {
     grid-area: entry2;
     margin-top: 10px;
-    background-color: rgba(66, 66, 66, 0.089); }
+    background-color: rgba(66, 66, 66, 0.089);
+  }
   .miniImg {
-    width: 100%; }
+    width: 100%;
+  }
   /*SASS this*/
   .contBox2 {
     margin: 30px;
@@ -872,33 +1220,41 @@
     justify-content: space-evenly;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: 5;
-    grid-template-areas: "h4 h4"  "p1 portada" "p2 p2" "roca ai" "p3 p3"; }
+    grid-template-areas: "h4 h4" "p1 portada" "p2 p2" "roca ai" "p3 p3";
+  }
   Div h4 {
     grid-area: h4;
     text-align: center;
     font-size: xx-large;
-    font-weight: bolder; }
+    font-weight: bolder;
+  }
   .re1 {
     grid-area: p1;
-    padding: 25px; }
+    padding: 25px;
+  }
   .re2 {
     grid-area: p2;
     width: 2fr;
-    text-align: center; }
+    text-align: center;
+  }
   .re3 {
     width: 3fr;
     grid-area: p3;
-    text-align: center; }
+    text-align: center;
+  }
   .portada {
     grid-area: portada;
     width: 1fr;
-    padding-left: 100px; }
+    padding-left: 100px;
+  }
   .rock {
     grid-area: roca;
-    margin-top: 20px; }
+    margin-top: 20px;
+  }
   .ai {
     grid-area: ai;
-    margin-top: 20px; }
+    margin-top: 20px;
+  }
   /* ValdarisCont 3*/
   .contBox3 {
     margin: 30px;
@@ -909,54 +1265,69 @@
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: 10;
-    grid-template-areas: "h4 h4"  "p1 p1" "p2 p2" "p3 p3" "p4 p4b" "p5 p5" "p6 p6" "p7 p7" "p8 p8" "p9 p9"; }
+    grid-template-areas: "h4 h4" "p1 p1" "p2 p2" "p3 p3" "p4 p4b" "p5 p5" "p6 p6" "p7 p7" "p8 p8" "p9 p9";
+  }
   .val1 {
     grid-area: p1;
     margin-top: 10px;
-    font-size: larger; }
+    font-size: larger;
+  }
   .val2 {
     grid-area: p3;
     margin: 10px;
-    text-align: center; }
+    text-align: center;
+  }
   .val3 {
     grid-area: p4b;
     text-align: right;
     font-size: large;
-    margin-left: 10px; }
+    margin-left: 10px;
+  }
   .val4 {
     grid-area: p5;
     margin: 10px;
-    text-align: center; }
+    text-align: center;
+  }
   .val5 {
     grid-area: p7;
     margin: 10px;
-    text-align: center; }
+    text-align: center;
+  }
   .val6 {
     grid-area: p9;
     margin: 10px;
-    text-align: center; }
+    text-align: center;
+  }
   .valPortada {
     grid-area: p2;
-    width: 50%; }
+    width: 50%;
+  }
   .valPortada img {
-    width: 200%; }
+    width: 200%;
+  }
   .weapons {
-    grid-area: p4; }
+    grid-area: p4;
+  }
   .headBang {
-    grid-area: p6; }
+    grid-area: p6;
+  }
   .headBang img {
-    width: 105%; }
+    width: 105%;
+  }
   .enemy {
-    grid-area: p8; }
+    grid-area: p8;
+  }
   .enemy img {
-    margin-left: 200px; }
+    margin-left: 200px;
+  }
   /*Store */
   .storeBox {
     margin: 12px;
     grid-area: content;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+  }
   .productA {
     margin: 40px;
     grid-area: content;
@@ -964,7 +1335,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 30%;
-    text-align: center; }
+    text-align: center;
+  }
   .productB {
     margin: 40px;
     grid-area: content;
@@ -972,7 +1344,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 30%;
-    text-align: center; }
+    text-align: center;
+  }
   .productC {
     margin: 40px;
     grid-area: content;
@@ -980,58 +1353,70 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 30%;
-    text-align: center; }
+    text-align: center;
+  }
   .burguer {
-    display: none; }
+    display: none;
+  }
   body h2 {
-    text-align: center; }
+    text-align: center;
+  }
   h5 {
     background-color: black;
-    color: white; }
+    color: rgb(255, 255, 255);
+  }
   nav {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: aliceblue;
     text-align: center;
     grid-area: nav;
     position: fixed;
     border: 0;
     margin-bottom: 15px;
-    width: 100%; }
+    width: 100%;
+  }
   a {
-    color: white;
-    font-size: 30px; }
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+  }
   .logo {
     width: 25px;
     position: absolute;
     top: 7px;
-    left: 10px; }
+    left: 10px;
+  }
   .twitch {
     position: absolute;
     width: 25px;
     right: 10px;
-    top: 7px; }
+    top: 7px;
+  }
   .twitter {
     position: absolute;
     width: 25px;
     right: 35px;
-    top: 7px; }
+    top: 7px;
+  }
   .insta {
     position: absolute;
     width: 25px;
     right: 60px;
-    top: 7px; }
+    top: 7px;
+  }
   .youtube {
     position: absolute;
     width: 25px;
     right: 85px;
-    top: 7px; }
+    top: 7px;
+  }
   footer {
     width: 100%;
     grid-area: footer;
     margin-top: 25px;
-    margin-right: 0px; }
+    margin-right: 0px;
+  }
   .side {
-    color: snow;
+    color: rgb(255, 250, 250);
     width: 100%;
     height: 100%;
     margin-top: 0px;
@@ -1040,53 +1425,69 @@
     text-overflow: inherit;
     float: right;
     list-style: none;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     grid-area: aside;
-    display: block; }
+    display: block;
+  }
   body div {
-    background-color: white;
-    width: 100%; }
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+  }
   div .descript {
     margin: 15px;
-    padding: 10px; }
+    padding: 10px;
+  }
   .contBox {
     margin: 30px;
     grid-area: content;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+  }
   .mini {
     width: 30%;
-    font-size: initial; }
+    font-size: initial;
+  }
   .mini__tit {
     text-align: center;
     font-size: 100%;
     background-color: rgba(0, 255, 255, 0.055);
-    height: fit-content; }
+    height: fit-content;
+  }
   .mini__img {
     width: 100%;
-    height: 60%; }
+    height: 60%;
+  }
   .mini div {
-    width: 30%; }
+    width: 30%;
+  }
   .retro {
-    width: 30%; }
+    width: 30%;
+  }
   .retro__tit {
     text-align: center;
     font: size 100%;
     height: fit-content;
-    background-color: rgba(0, 255, 255, 0.055); }
+    background-color: rgba(0, 255, 255, 0.055);
+  }
   .retro__img {
     width: 100%;
-    height: 60%; }
+    height: 60%;
+  }
   .perfect {
-    width: 30%; }
+    width: 30%;
+  }
   .perfect__tit {
     text-align: center;
     font-size: 18px;
     background-color: rgba(0, 255, 255, 0.055);
-    height: fit-content; }
+    height: fit-content;
+  }
   .perfect__img {
     width: 100%;
-    height: 60%; }
+    height: 60%;
+  }
   .form {
-    grid-area: content; } }
+    grid-area: content;
+  }
+}/*# sourceMappingURL=style.css.map */
