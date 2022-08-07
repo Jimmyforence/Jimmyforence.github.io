@@ -10,6 +10,7 @@
         grid-template-rows: 4 ;
         grid-template-areas: "nav nav nav nav"
                             "content content content aside"
+                            
                             "cont2 cont2 cont2 aside"
                             "footer footer footer footer";
     }
@@ -344,55 +345,7 @@ text-align: center;
         margin-left:200px ;        
         }
 
-/*Store */
-.storeBox{
-    margin: 12px;
-        grid-area: content;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        
-}
-.productA{
-      
 
-    margin: map-get($product, margin );
-    grid-area:map-get($product , grid-area );
-    display: map-get($product , display );
-    flex-direction:map-get($product , flex-direction );
-    justify-content:map-get($product , justify-content );
-    width: map-get($product , width );
-    text-align:  map-get($product , text-align );
-
-
-
-}
-
-.productB{
-  
-
-    margin: map-get($product, margin );
-    grid-area:map-get($product , grid-area );
-    display: map-get($product , grid-area );
-    flex-direction:map-get($product , flex-direction );
-    justify-content:map-get($product , justify-content );
-    width: map-get($product , width );
-    text-align:  map-get($product , text-align );
-
-}
-
-.productC{
-  
-
-    margin: map-get($product, margin );
-    grid-area:map-get($product , grid-area );
-    display: map-get($product , grid-area );
-    flex-direction:map-get($product , flex-direction );
-    justify-content:map-get($product , justify-content );
-    width: map-get($product , width );
-    text-align:  map-get($product , text-align );
-
-}   
     
     .burguer 
     {
