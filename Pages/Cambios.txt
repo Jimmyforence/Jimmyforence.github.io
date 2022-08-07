@@ -1,6 +1,0 @@
-SEO:
-
-Se agrego los titulos a todas las páginas.
-Se agrego una descripción a la pagina principal
-Se agregaron titulos a Podcast.
-Las paginas están organizadas para no hacer el URL muy largo.
