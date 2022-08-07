@@ -1,0 +1,70 @@
+
+
+
+/*Store  1200*/
+.storeBox{
+    margin: 12px;
+        grid-area: cont2;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      
+        img{
+            width: 100%;
+        }
+}
+
+.new
+{
+text-align: center;
+background-color:$colorabuguet;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: 2 ;
+grid-template-areas: "H H H"
+                    "STR STR2 content";
+
+
+}
+   
+h2{
+    grid-area: H;
+}
+
+
+.productA{
+    margin: map-get($product, margin );
+grid-area:STR;
+display: map-get($product , grid-area );
+flex-direction:map-get($product , flex-direction );
+justify-content:map-get($product , justify-content );
+width: map-get($product , width );
+text-align:  map-get($product , text-align );
+
+}
+
+.productB{
+margin: map-get($product, margin );
+grid-area:STR2;
+display: map-get($product , grid-area );
+flex-direction:map-get($product , flex-direction );
+justify-content:map-get($product , justify-content );
+width: map-get($product , width );
+text-align:  map-get($product , text-align );
+
+}
+
+.productC{
+
+
+margin: map-get($product, margin );
+grid-area:map-get($product , grid-area );
+display: map-get($product , grid-area );
+flex-direction:map-get($product , flex-direction );
+justify-content:map-get($product , justify-content );
+width: map-get($product , width );
+text-align:  map-get($product , text-align );
+
+}   
+        
+              

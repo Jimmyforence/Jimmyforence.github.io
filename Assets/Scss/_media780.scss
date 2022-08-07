@@ -11,11 +11,12 @@ body{
 .home{  
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 4;
-    grid-template-areas: "nav nav nav nav"
-                        "content content content aside"
-                        "cont2 cont2 cont2 aside"
-                        "footer footer footer footer";
+    grid-template-rows: 5 ;
+        grid-template-areas: "nav nav nav nav"
+                            "content content content aside"
+                            "h3 h3 h3 aside"
+                            "cont2 cont2 cont2 aside"
+                            "footer footer footer footer";
 }
 
 
@@ -409,55 +410,7 @@ footer{
     width: 120%;
 }
 
-/*Store */
-.storeBox{
-    margin: 12px;
-        grid-area: content;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        
-}
-.productA{
-      
 
-    margin: 40px;
-    grid-area: content;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100%;
-    text-align:  center;
-
-
-
-}
-
-.productB{
-  
-
-margin: 40px;
-grid-area: content;
-display:flex;
-flex-direction: column;
-justify-content: space-evenly;
-width: 100%;
-text-align:  center;
-
-
-}
-
-.productC{
-  
-
-margin: 40px;
-grid-area: content;
-display:flex;
-flex-direction: column;
-justify-content: space-evenly;
-width: 100%;
-text-align:  center;
-}
 
 /*Content*/
 

@@ -10,13 +10,16 @@ $darkabuguet: rgb(3, 59, 97);
 
 
 $product:(
-margin: 40px,
+margin: 0px,
 grid-area: content,
-display: flex,
-flex-direction: column,
+display:flex,
+flex-direction: row,
 justify-content: space-evenly,
-width: 30%,
+width: 100%,
 text-align: center,
+
 );
+
+
 
 
