@@ -1522,6 +1522,9 @@
   form textarea {
     width: 478px; } }
 
+.Shortside {
+  height: 500px; }
+
 @media (max-width: 779px) {
   .Abuguet {
     grid-area: welc;
@@ -1630,3 +1633,41 @@
     .side li {
       list-style: none;
       margin-left: 3px; } }
+
+.shortSide {
+  height: 441px;
+  color: snow;
+  width: 10%;
+  margin-top: 60px;
+  padding-left: 0px;
+  padding-top: 7px;
+  float: right;
+  list-style: none;
+  background-color: black;
+  grid-area: aside;
+  display: block;
+  position: fixed;
+  z-index: 999;
+  right: 0px; }
+  .shortSide li {
+    list-style: none;
+    margin-left: 3px; }
+
+.shortSideB {
+  height: 790px;
+  color: snow;
+  width: 10%;
+  margin-top: 60px;
+  padding-left: 0px;
+  padding-top: 7px;
+  float: right;
+  list-style: none;
+  background-color: black;
+  grid-area: aside;
+  display: block;
+  position: fixed;
+  z-index: 999;
+  right: 0px; }
+  .shortSideB li {
+    list-style: none;
+    margin-left: 3px; }

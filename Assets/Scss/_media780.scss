@@ -37,74 +37,7 @@
 
  /*SASS this*/
 
- .contBox2 {
-    margin: 30px;
-    grid-area: content;
-    display: grid;
-    
-    grid-template-columns: repeat(2,2fr);
-    grid-template-rows: 5 ;
-    grid-template-areas:"h4 h4" 
-                        "p1 portada"
-                        "p2 p2"
-                        "roca ai"
-                        "p3 p3"
-                        ;
-        
-        
-    } 
-
-   
-
-    Div h4
-    {
- grid-area: h4;
- text-align: center;
- font-size:xx-large;
- font-weight: bolder;
-    }
-
-.re1
-{
-
- grid-area: p1;
- padding: 25px;
-
-
-}
-.re2
-{
-grid-area: p2;
-width: 2fr;
-text-align: center;
-
-
-}
-.re3
-{
-width: 3fr;
-grid-area: p3;
-text-align: center;
-
-}
-
-.portada
-{
-    grid-area: portada;
-    width: 1fr;
-    padding-left: 100px;
-}
-
-.rock{
-    grid-area: roca;
-    margin-top: 20px;
-}
-
-.ai{
-    grid-area: ai;
-    margin-top: 20px;
-}
-
+ 
 
 /* ValdarisCont 3*/
  .contBox3 {
