@@ -4,20 +4,25 @@
     padding: 0px;
     font-family: 'Montserrat';
     font-weight: 600;
-    
+
 }
 
 @import "var";
-@import "media779";
-@import "media780";
-@import "media1024";
-@import "media1200";
-<<<<<<< HEAD
-// @import "storebox";
+@import"home";
+// @import "media779";
+// @import "media780";
+// @import "media1024";
+// @import "media1200";
+@import "burguer";
 
-
-
-/* $ npm run watch-css /*
-=======
+@import "News";
+@import "RE5";
+@import "valf";
 @import "storebox";
->>>>>>> jimmyforence.github.io
+@import "Podcast";
+@import "blog";
+@import "footer";
+@import "nav";
+@import "form";
+@import "logo";
+@import "aside";

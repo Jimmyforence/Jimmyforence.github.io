@@ -1,9 +1,434 @@
 
-
+@media(max-width:779px)
+{
+    .storeBox{
+        margin: 12px;
+            grid-area: cont2;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+          
+            img{
+                width: 100%;
+            }
+    }
+    
+    .new
+    {
+    text-align: center;
+    background-color:white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 4 ;
+grid-template-areas: "H H H"
+                    "STR STR2 content"
+                     "STR4 STR5 STR6"
+                     "STR7 STR8 STR9"   ;
+    
+    
+    }
+       
+    h2{
+        grid-area: H;
+    }
+    
+    
+    .productA{
+        margin: map-get($product, margin );
+    grid-area:STR;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    
+    .productB{
+    margin: map-get($product, margin );
+    grid-area:STR2;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    
+    .productC{
+    
+    
+    margin: map-get($product, margin );
+    grid-area:map-get($product , grid-area );
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }   
+    
+    .productD{
+        margin: map-get($product, margin );
+    grid-area:STR4;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    .productE{
+        margin: map-get($product, margin );
+    grid-area:STR5;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    .productF{
+        margin: map-get($product, margin );
+    grid-area:STR6;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    .productG{
+        margin: map-get($product, margin );
+    grid-area:STR7;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    .productH{
+        margin: map-get($product, margin );
+    grid-area:STR8;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    .productI{
+        margin: map-get($product, margin );
+    grid-area:STR9;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+}
+@media(min-width:780px)
+{
+    .storeBox{
+        margin: 12px;
+            grid-area: cont2;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+          
+            img{
+                width: 100%;
+            }
+    }
+    
+    .new
+    {
+    text-align: center;
+    background-color:white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 4 ;
+    grid-template-areas: "H H H"
+                        "STR STR2 content"
+                         "STR4 STR5 STR6"
+                         "STR7 STR8 STR9"   ;
+    
+    
+    }
+       
+    h2{
+        grid-area: H;
+    }
+    
+    
+    .productA{
+        margin: map-get($product, margin );
+    grid-area:STR;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    
+    .productB{
+    margin: map-get($product, margin );
+    grid-area:STR2;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    
+    .productC{
+    
+    
+    margin: map-get($product, margin );
+    grid-area:map-get($product , grid-area );
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }   
+    
+    .productD{
+        margin: map-get($product, margin );
+    grid-area:STR4;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    .productE{
+        margin: map-get($product, margin );
+    grid-area:STR5;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    .productF{
+        margin: map-get($product, margin );
+    grid-area:STR6;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    .productG{
+        margin: map-get($product, margin );
+    grid-area:STR7;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    .productH{
+        margin: map-get($product, margin );
+    grid-area:STR8;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    .productI{
+        margin: map-get($product, margin );
+    grid-area:STR9;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+            
+}
+@media(min-width:1024px)
+{
+    
+    .aside
+    {
+    height: 200px;
+    }
+    .storeBox{
+        margin: 12px;
+            grid-area: cont2;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+          
+            img{
+                width: 100%;
+            }
+    }
+    
+    .new
+    {
+    text-align: center;
+    background-color:white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 4 ;
+grid-template-areas: "H H H"
+                    "STR STR2 content"
+                     "STR4 STR5 STR6"
+                     "STR7 STR8 STR9"   ;
+    
+    
+    }
+       
+    h2{
+        grid-area: H;
+    }
+    
+    
+    .productA{
+        margin: map-get($product, margin );
+    grid-area:STR;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    
+    .productB{
+    margin: map-get($product, margin );
+    grid-area:STR2;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    
+    .productC{
+    
+    
+    margin: map-get($product, margin );
+    grid-area:map-get($product , grid-area );
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }   
+    
+    .productD{
+        margin: map-get($product, margin );
+    grid-area:STR4;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    .productE{
+        margin: map-get($product, margin );
+    grid-area:STR5;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    .productF{
+        margin: map-get($product, margin );
+    grid-area:STR6;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    .productG{
+        margin: map-get($product, margin );
+    grid-area:STR7;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    .productH{
+        margin: map-get($product, margin );
+    grid-area:STR8;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+    .productI{
+        margin: map-get($product, margin );
+    grid-area:STR9;
+    display: map-get($product , grid-area );
+    flex-direction:map-get($product , flex-direction );
+    justify-content:map-get($product , justify-content );
+    width: map-get($product , width );
+    text-align:  map-get($product , text-align );
+    display: grid;
+    
+    }
+            
+}
+@media(min-width:1200px)
+{
 
 /*Store  1200*/
 .storeBox{
-    margin: 12px;
+    margin: 20px;
         grid-area: cont2;
         display:flex;
         flex-direction: row;
@@ -17,12 +442,14 @@
 .new
 {
 text-align: center;
-background-color:$colorabuguet;
+background-color:rgba(255, 255, 255, 0);
 display: grid;
 grid-template-columns: repeat(3,1fr);
-grid-template-rows: 2 ;
+grid-template-rows: 4 ;
 grid-template-areas: "H H H"
-                    "STR STR2 content";
+                    "STR STR2 content"
+                     "STR4 STR5 STR6"
+                     "STR7 STR8 STR9"   ;
 
 
 }
@@ -40,6 +467,7 @@ flex-direction:map-get($product , flex-direction );
 justify-content:map-get($product , justify-content );
 width: map-get($product , width );
 text-align:  map-get($product , text-align );
+display: grid;
 
 }
 
@@ -51,6 +479,7 @@ flex-direction:map-get($product , flex-direction );
 justify-content:map-get($product , justify-content );
 width: map-get($product , width );
 text-align:  map-get($product , text-align );
+display: grid;
 
 }
 
@@ -64,7 +493,75 @@ flex-direction:map-get($product , flex-direction );
 justify-content:map-get($product , justify-content );
 width: map-get($product , width );
 text-align:  map-get($product , text-align );
+display: grid;
 
 }   
-        
-              
+
+.productD{
+    margin: map-get($product, margin );
+grid-area:STR4;
+display: map-get($product , grid-area );
+flex-direction:map-get($product , flex-direction );
+justify-content:map-get($product , justify-content );
+width: map-get($product , width );
+text-align:  map-get($product , text-align );
+display: grid;
+
+}
+.productE{
+    margin: map-get($product, margin );
+grid-area:STR5;
+display: map-get($product , grid-area );
+flex-direction:map-get($product , flex-direction );
+justify-content:map-get($product , justify-content );
+width: map-get($product , width );
+text-align:  map-get($product , text-align );
+display: grid;
+
+}
+.productF{
+    margin: map-get($product, margin );
+grid-area:STR6;
+display: map-get($product , grid-area );
+flex-direction:map-get($product , flex-direction );
+justify-content:map-get($product , justify-content );
+width: map-get($product , width );
+text-align:  map-get($product , text-align );
+display: grid;
+
+}
+.productG{
+    margin: map-get($product, margin );
+grid-area:STR7;
+display: map-get($product , grid-area );
+flex-direction:map-get($product , flex-direction );
+justify-content:map-get($product , justify-content );
+width: map-get($product , width );
+text-align:  map-get($product , text-align );
+display: grid;
+
+}
+.productH{
+    margin: map-get($product, margin );
+grid-area:STR8;
+display: map-get($product , grid-area );
+flex-direction:map-get($product , flex-direction );
+justify-content:map-get($product , justify-content );
+width: map-get($product , width );
+text-align:  map-get($product , text-align );
+display: grid;
+
+}
+.productI{
+    margin: map-get($product, margin );
+grid-area:STR9;
+display: map-get($product , grid-area );
+flex-direction:map-get($product , flex-direction );
+justify-content:map-get($product , justify-content );
+width: map-get($product , width );
+text-align:  map-get($product , text-align );
+display: grid;
+
+}
+
+}              

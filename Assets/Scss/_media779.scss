@@ -6,18 +6,21 @@
 
 body{
     background-color: rgb(255, 255, 255);
-    }
-
-.home{  
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 5 ;
-    grid-template-areas: "nav nav nav nav"
-                        "content content content aside"
-                        "h3 h3 h3 aside"
-                        "cont2 cont2 cont2 aside"
-                        "footer footer footer footer";
 }
+        .home{  
+            display: grid;
+            
+            background-color: rgb(255, 255, 255);
+            grid-template-columns: repeat(4,30% 30% 30% 10%);
+            grid-template-rows: 6 ;
+            grid-template-areas: "nav nav nav nav"
+                                "content content content aside"
+                                "cont2 cont2 cont2 aside"
+                                "cont3 cont3 cont3 aside"
+                                "blank cont4 cont4 aside"
+                                "footer footer footer footer";
+        }
+    
 
 
 .sonidoBoom
@@ -27,11 +30,12 @@ body{
     width: 30%;
     height: 30px;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 3 ;
-    grid-template-areas: "title title "
-                        "subtitle subtitle"
-                        "desc desc"
-                         ;
+    grid-template-rows: 5 ;
+    grid-template-areas: "nav nav nav nav"
+                        "content content content aside"
+                        "cont2 cont2 cont2 aside"
+                        "Pod Pod Pod aside"
+                        "footer footer footer footer";
 }
 
 .titSonido{
@@ -169,73 +173,7 @@ grid-template-areas: "img tit"
 
  /*SASS this*/
 
- .contBox2 {
-    margin: 30px;
-    grid-area: content;
-    display: grid;
-    
-    grid-template-columns: repeat(2,2fr);
-    grid-template-rows: 5 ;
-    grid-template-areas:"h4 h4" 
-                        "p1 portada"
-                        "p2 p2"
-                        "roca ai"
-                        "p3 p3"
-                        ;
-        
-        
-    } 
-
-   
-
-    Div h4
-    {
- grid-area: h4;
- text-align: center;
- font-size:xx-large;
- font-weight: bolder;
-    }
-
-.re1
-{
-
- grid-area: p1;
- padding: 25px;
-
-
-}
-.re2
-{
-grid-area: p2;
-width: 2fr;
-text-align: center;
-
-
-}
-.re3
-{
-width: 3fr;
-grid-area: p3;
-text-align: center;
-
-}
-
-.portada
-{
-    grid-area: portada;
-    width: 1fr;
-    padding-left: 100px;
-}
-
-.rock{
-    grid-area: roca;
-    margin-top: 20px;
-}
-
-.ai{
-    grid-area: ai;
-    margin-top: 20px;
-}
+ 
 
 
 /* ValdarisCont 3*/
@@ -346,83 +284,7 @@ text-align: center;
 
 
 
-nav{
-    background-color: rgb(0, 0, 0);
-        
-        
-       color: aliceblue;
-       text-align: center;
-       grid-area: nav;
-       position: fixed;
-       border: 10;
-       margin-bottom: 5px;
-       z-index: 9000;
-       width: 100%; 
-       font-size:medium;
-  
-    }
 
-form
-{
-grid-area: content;
-width:1fr;
-margin-left: 20px;
-margin-top: 13px;
-}
-
-form textarea
-{
-    width: 478px;
-}
-
-    a{
-        color: rgb(255, 255, 255);
-        font-size: 10px;
-    }
-
-.logo{
-    width: 14px;
-     position: absolute;
-     top: 3px;
-     left: 5px;
-    }
-
-.twitch {
-    position:absolute;
-    
-    width:14px;
-    right: 10px;
-    top:3px
-}
-
-.twitter{
-    position:absolute;
-    width: 14px;
-    right: 25px;
-    top: 3px;
-
-}
-
-.insta{
-    position:absolute;
-    width:14px;
-    right: 40px;
-    top:3px
-}
-.youtube{
-    position:absolute;
-    width:14px;
-    right: 55px;
-    top:3px
-
-}
-
-footer{
-    background-color: black;
-    grid-area: footer;
-    color: aliceblue;
-    width: 200%;
-}
 
 
 
@@ -477,91 +339,3 @@ width: 100%;
 }
 
 
-
-
-/*Burger menu */
-
-.burguer 
-   {
-    margin-top:  45px;
-    
-    width: 45px;
-    height: 45px;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    right: 0px;
-    top: 5px;
-    z-index: 9000;
-    cursor: pointer;
-    position: fixed;
-    grid-area: content;
-
-    
-   }
-   
-   
-.burguer span 
-    {
-    display: block;
-    width: 100%;
-    background:rgb(54, 147, 177);
-    height: 10px;
-    margin-top: 3px;
-    transform-origin: 0px 100%;
-    transition: all 200ms;
-    grid-area: content;
-    }
-
-
-.activeline1 {
-transform:rotate(45deg)
-translate(0px, -6px);
-}
-.activeline2{
-opacity:0;
-margin-left: -30px;
-}
-.activeline3{
-    Transform: rotate(-45deg)
-    translate(6px, 8px);
-}
-
-
-
-
- .logins {
-    
-    flex-direction: column;
-    background-color: rgb(0, 0, 0);
-    font-size: 30px;    
-    justify-content: space-evenly;
-    position: fixed;
-    list-style: none;
-    z-index: 9000;
-    top: 55px;
-    right: 43px;
-    display: block;
-
-    
-         }
-
-.social a {
-    flex-direction: column;
-    width: 10px;
-    background-color: rgb(245, 240, 240);
-    font-size: 35px;    
-   float: right;
-}
-
-aside{
-    display: none;
-}
-
-.sidekick
-{
-background-color: rgb(0, 0, 0);
-color: aliceblue;
-margin-top: 10px;
-display: block;
-}
-}

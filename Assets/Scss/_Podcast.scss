@@ -1,0 +1,591 @@
+// @media(max-width:779px)
+// {
+// .sonidoBoom
+// {
+//     display: grid;
+//     grid-area: content;
+//     width: 30%;
+//     height: 30px;
+//     grid-template-columns: repeat(2,1fr);
+//     grid-template-rows: 5 ;
+//     grid-template-areas: "nav nav nav nav"
+//                         "content content content aside"
+//                         "cont2 cont2 cont2 aside"
+//                         "Pod Pod Pod aside"
+//                         "footer footer footer footer";
+// }
+
+// .titSonido{
+// display: grid;
+// color: black;
+// background-color: rgb(255, 255, 255);
+// grid-area: title;
+// margin: 10px;
+
+// }
+
+// .subsonido{
+// display: grid;
+// color: black;
+// background-color: rgb(255, 255, 255);
+// grid-area: subtitle;
+// margin: 10px;
+// }
+// .parraf
+// {
+// display: grid;
+// color: black;
+// background-color: rgb(160, 35, 35);
+// grid-area: desc;
+// margin: 10px;
+// }
+// .contPlayer
+// {   
+// display: grid;
+// flex-direction: column;
+// width: 100%;
+// margin-top: 20px;
+
+// grid-area: cont2;
+// grid-template-columns: repeat(2,3fr);
+// grid-template-rows: 4 ;
+// grid-template-areas: "img tit"
+//                     "img subti"
+//                     "img desc"
+//                     "btn btn";
+//                 }
+
+
+// .playerImg
+// {
+//   grid-area: img;
+//   display: grid;
+
+// }
+// .titulo
+// {
+//     width: 250px;
+    
+//     grid-area: tit;
+//     display: grid;
+//     margin: 15px;
+//     padding: 10px;
+// }
+// .episode
+// {
+//     width: 250px;
+//     grid-area: subti;
+//     display: grid;
+//     margin: 5px;
+//     padding: 10px;
+//     font-weight: 400;
+//     }
+// .descript
+// {
+//     width: 250px;
+//     grid-area: desc;
+//     width: auto;
+//     display: grid;
+//     margin: 2px;
+//     padding: 10px;
+//     font-weight: 300;
+//     font-style: italic;
+// }
+//    .pIImg
+// {
+
+//     width: 100%;
+    
+// }
+// .mediaPlay
+// {display: flex;
+//     flex-direction: row;
+//     justify-content: space-evenly;
+//     width: 350%;
+//     margin-top: 5px;
+
+// }
+
+// .pImg
+// {
+//     width: 30px ;
+  
+// }
+// }
+@media(max-width:779px)
+{
+
+    .sonidoBoom
+        {
+            display: grid;
+            grid-area: cont3;
+            background-image:url(../GenAssets/Us-Sonido-boom.png);
+            background-attachment: fixed;
+            background-position:left;
+            background-repeat: no-repeat;
+            background-size: 95%;
+            width: 100%;
+            height: 300px;
+             grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 3 ;
+            grid-template-areas: "title title "
+                                "subtitle subtitle"
+                                "desc desc";
+                                .titSonido{
+                                    display: grid;
+                                    color: rgb(255, 255, 255);
+                                    background-color: rgba(255, 255, 255, 0);
+                                    grid-area: title;
+                                    margin: 10px;
+                                
+                                }
+                                .subsonido{
+                                    display: grid;
+                                    color: rgb(255, 255, 255);
+                                    background-color: rgba(255, 255, 255, 0);
+                                    grid-area: subtitle;
+                                    margin: 10px;
+                                }
+                                .parraf
+                                {
+                                    display: grid;
+                                    color: rgb(255, 255, 255);
+                                    background-color: rgba(255, 255, 255, 0);
+                                    grid-area: desc;
+                                    margin: 10px;
+                                }
+        }
+    
+    
+    
+    .contPlayer
+    {  
+        display: grid;
+        flex-direction: column;
+        width: 300px;
+        margin-top: 40px;
+      
+        grid-area:cont4;
+        grid-template-columns: repeat(2,3fr);
+        grid-template-rows: 4 ;
+        grid-template-areas: "img tit"
+                            "img subti"
+                            "img desc"
+                            "btn btn";
+    
+       .playerImg
+        {
+          grid-area: img;
+          display: grid;
+    
+        }
+        .titulo
+        {
+            grid-area: tit;
+            display: grid;
+            background-color: rgba(240, 248, 255, 0);
+            margin: 15px;
+            padding: 10px;
+        }
+        .episode
+        {
+            grid-area: subti;
+            background-color: rgba(240, 248, 255, 0);
+            display: grid;
+            margin: 5px;
+            padding: 10px;
+            font-weight: 400;
+            }
+        .descript
+        {
+            grid-area: desc;
+            display: grid;
+            background-color: rgba(240, 248, 255, 0);
+            margin: 2px;
+            padding: 10px;
+            font-weight: 300;
+            font-style: italic;
+        }
+           .pIImg
+        {
+    
+            width: 300px;
+            
+        }
+        .mediaPlay
+        {display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 250%;
+            margin-top: 5px;
+        
+        }
+    
+        .pImg
+        {
+            width: 30px ;
+          
+       }
+    
+                        }
+    
+        
+                    }
+@media(min-width:780px)
+{
+
+    .sonidoBoom
+        {
+            display: grid;
+            grid-area: cont3;
+            background-image:url(../GenAssets/Us-Sonido-boom.png);
+            background-attachment: fixed;
+            background-position:left;
+            background-repeat: no-repeat;
+            background-size: 95%;
+            width: 100%;
+            height: 300px;
+             grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 3 ;
+            grid-template-areas: "title title "
+                                "subtitle subtitle"
+                                "desc desc";
+                                .titSonido{
+                                    display: grid;
+                                    color: rgb(255, 255, 255);
+                                    background-color: rgba(255, 255, 255, 0);
+                                    grid-area: title;
+                                    margin: 10px;
+                                
+                                }
+                                .subsonido{
+                                    display: grid;
+                                    color: rgb(255, 255, 255);
+                                    background-color: rgba(255, 255, 255, 0);
+                                    grid-area: subtitle;
+                                    margin: 10px;
+                                }
+                                .parraf
+                                {
+                                    display: grid;
+                                    color: rgb(255, 255, 255);
+                                    background-color: rgba(255, 255, 255, 0);
+                                    grid-area: desc;
+                                    margin: 10px;
+                                }
+        }
+    
+    
+    
+    .contPlayer
+    {  
+        display: grid;
+        flex-direction: column;
+        width: 300px;
+        margin-top: 40px;
+      
+        grid-area:cont4;
+        grid-template-columns: repeat(2,3fr);
+        grid-template-rows: 4 ;
+        grid-template-areas: "img tit"
+                            "img subti"
+                            "img desc"
+                            "btn btn";
+    
+       .playerImg
+        {
+          grid-area: img;
+          display: grid;
+    
+        }
+        .titulo
+        {
+            grid-area: tit;
+            display: grid;
+            background-color: rgba(240, 248, 255, 0);
+            margin: 15px;
+            padding: 10px;
+        }
+        .episode
+        {
+            grid-area: subti;
+            background-color: rgba(240, 248, 255, 0);
+            display: grid;
+            margin: 5px;
+            padding: 10px;
+            font-weight: 400;
+            }
+        .descript
+        {
+            grid-area: desc;
+            display: grid;
+            background-color: rgba(240, 248, 255, 0);
+            margin: 2px;
+            padding: 10px;
+            font-weight: 300;
+            font-style: italic;
+        }
+           .pIImg
+        {
+    
+            width: 300px;
+            
+        }
+        .mediaPlay
+        {display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 250%;
+            margin-top: 5px;
+        
+        }
+    
+        .pImg
+        {
+            width: 30px ;
+          
+       }
+    
+                        }
+    
+        
+                    }
+
+@media(min-width:1024px)
+{
+
+    .sonidoBoom
+        {
+            display: grid;
+            grid-area: cont3;
+            background-image:url(../GenAssets/Us-Sonido-boom.png);
+            background-attachment: fixed;
+            background-position:left;
+            background-repeat: no-repeat;
+            background-size: 95%;
+            width: 100%;
+            height: 300px;
+             grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 3 ;
+            grid-template-areas: "title title "
+                                "subtitle subtitle"
+                                "desc desc";
+                                .titSonido{
+                                    display: grid;
+                                    color: rgb(255, 255, 255);
+                                    background-color: rgba(255, 255, 255, 0);
+                                    grid-area: title;
+                                    margin: 10px;
+                                
+                                }
+                                .subsonido{
+                                    display: grid;
+                                    color: rgb(255, 255, 255);
+                                    background-color: rgba(255, 255, 255, 0);
+                                    grid-area: subtitle;
+                                    margin: 10px;
+                                }
+                                .parraf
+                                {
+                                    display: grid;
+                                    color: rgb(255, 255, 255);
+                                    background-color: rgba(255, 255, 255, 0);
+                                    grid-area: desc;
+                                    margin: 10px;
+                                }
+        }
+    
+    
+    
+    .contPlayer
+    {  
+        display: grid;
+        flex-direction: column;
+        width: 300px;
+        margin-top: 40px;
+      
+        grid-area:cont4;
+        grid-template-columns: repeat(2,3fr);
+        grid-template-rows: 4 ;
+        grid-template-areas: "img tit"
+                            "img subti"
+                            "img desc"
+                            "btn btn";
+    
+       .playerImg
+        {
+          grid-area: img;
+          display: grid;
+    
+        }
+        .titulo
+        {
+            grid-area: tit;
+            display: grid;
+            background-color: rgba(240, 248, 255, 0);
+            margin: 15px;
+            padding: 10px;
+        }
+        .episode
+        {
+            grid-area: subti;
+            background-color: rgba(240, 248, 255, 0);
+            display: grid;
+            margin: 5px;
+            padding: 10px;
+            font-weight: 400;
+            }
+        .descript
+        {
+            grid-area: desc;
+            display: grid;
+            background-color: rgba(240, 248, 255, 0);
+            margin: 2px;
+            padding: 10px;
+            font-weight: 300;
+            font-style: italic;
+        }
+           .pIImg
+        {
+    
+            width: 300px;
+            
+        }
+        .mediaPlay
+        {display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 250%;
+            margin-top: 5px;
+        
+        }
+    
+        .pImg
+        {
+            width: 30px ;
+          
+       }
+    
+                        }
+    
+        
+                    }
+@media(min-width:1200px)
+{
+
+.sonidoBoom
+    {
+        display: grid;
+        grid-area: cont3;
+        background-image:url(../GenAssets/Us-Sonido-boom.png);
+        background-attachment: fixed;
+        background-position:left;
+        background-repeat: no-repeat;
+        background-size: 95%;
+        width: 100%;
+        height: 300px;
+         grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 3 ;
+        grid-template-areas: "title title "
+                            "subtitle subtitle"
+                            "desc desc";
+                            .titSonido{
+                                display: grid;
+                                color: rgb(255, 255, 255);
+                                background-color: rgba(255, 255, 255, 0);
+                                grid-area: title;
+                                margin: 10px;
+                            
+                            }
+                            .subsonido{
+                                display: grid;
+                                color: rgb(255, 255, 255);
+                                background-color: rgba(255, 255, 255, 0);
+                                grid-area: subtitle;
+                                margin: 10px;
+                            }
+                            .parraf
+                            {
+                                display: grid;
+                                color: rgb(255, 255, 255);
+                                background-color: rgba(255, 255, 255, 0);
+                                grid-area: desc;
+                                margin: 10px;
+                            }
+    }
+
+
+
+.contPlayer
+{  
+    display: grid;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 40px;
+  
+    grid-area:cont4;
+    grid-template-columns: repeat(2,3fr);
+    grid-template-rows: 4 ;
+    grid-template-areas: "img tit"
+                        "img subti"
+                        "img desc"
+                        "btn btn";
+
+   .playerImg
+    {
+      grid-area: img;
+      display: grid;
+
+    }
+    .titulo
+    {
+        grid-area: tit;
+        display: grid;
+        background-color: rgba(240, 248, 255, 0);
+        margin: 15px;
+        padding: 10px;
+    }
+    .episode
+    {
+        grid-area: subti;
+        background-color: rgba(240, 248, 255, 0);
+        display: grid;
+        margin: 5px;
+        padding: 10px;
+        font-weight: 400;
+        }
+    .descript
+    {
+        grid-area: desc;
+        display: grid;
+        background-color: rgba(240, 248, 255, 0);
+        margin: 2px;
+        padding: 10px;
+        font-weight: 300;
+        font-style: italic;
+    }
+       .pIImg
+    {
+
+        width: 300px;
+        
+    }
+    .mediaPlay
+    {display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 250%;
+        margin-top: 5px;
+    
+    }
+
+    .pImg
+    {
+        width: 30px ;
+      
+   }
+
+                    }
+
+    
+                }

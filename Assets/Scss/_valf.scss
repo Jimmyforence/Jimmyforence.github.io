@@ -1,0 +1,125 @@
+@media(max-width:779px)
+{
+    
+}
+@media(min-width:780px)
+{
+
+}
+
+
+@media(min-width:1024px)
+{
+    
+}
+@media(min-width:1200px)
+{
+
+/* ValdarisCont 3*/
+.contBox3 {
+    margin: 30px;
+  
+    grid-area: content;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: 10 ;
+        grid-template-areas:"h4 h4" 
+                            "p1 p1"
+                            "p2 p2"
+                            "p3 p3"
+                            "p4 p4b"
+                            "p5 p5"
+                            "p6 p6"
+                            "p7 p7"
+                            "p8 p8"
+                            "p9 p9"
+                            ;
+            
+            
+        } 
+    
+        
+        .val1
+        {
+            grid-area: p1;
+            margin-top: 10px;
+            font-size:larger;
+        }
+        .val2
+        {
+            grid-area: p3;
+            margin: 10px;
+            text-align: center;
+
+        }
+        .val3
+        {
+            grid-area: p4b;
+            text-align: right;
+            font-size: large;
+            margin-left: 10px;
+        }
+
+        
+        .val4
+        {
+            grid-area: p5;
+            margin: 10px;
+            text-align: center;
+
+        }
+        .val5
+        {
+            grid-area: p7;
+            margin: 10px;
+
+            text-align: center;
+
+        }
+        .val6
+        {
+            grid-area: p9;
+            margin: 10px;
+
+            text-align: center;
+
+        }
+
+        .valPortada
+        {
+            grid-area: p2;
+            width: 50%;
+        
+        }
+
+        .valPortada img {
+            width: 200%;
+        }
+
+        .weapons
+        {
+            grid-area: p4;
+        }
+        
+        .headBang
+        {
+            grid-area: p6;
+           
+        }
+
+        .headBang img
+        {
+            width: 105%;
+        }
+        .enemy
+        {
+            grid-area: p8;
+        }
+        .enemy img 
+        {
+        margin-left:200px ;        
+        }
+    }

@@ -1,0 +1,53 @@
+@media(max-width:779px)
+{
+
+}
+@media(min-width:780px)
+{
+
+}
+@media(min-width:1024px)
+{
+    
+}
+@media(min-width:1200px)
+{
+
+/*Blog*/
+.contBoxBlog{
+    margin: 30px;
+        grid-area: content;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+
+@include grid(repeat(2,3fr),3,"entry1 entry1""entry2 entry2""entry3 entry3");
+   
+}   
+
+
+
+.valfBox
+{
+    grid-area:entry1;
+    width: 100%;
+    margin-top: 10px;
+    .valfaris
+    {
+        width: 100%;
+    }
+}
+   
+.blogMini{
+    grid-area: entry2;
+    margin-top: 10px;
+    background-color: rgba(66, 66, 66, 0.089);
+}
+
+.miniImg{
+    width: 100%;
+}
+
+
+}

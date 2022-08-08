@@ -1,0 +1,93 @@
+@media(max-width:779px)
+{
+    .Abuguet{
+        grid-area: welc;
+        display: grid;
+        .welcome{
+          
+            background-image:url(/Assets/GenAssets/Logo-white.png);
+            background-attachment: fixed;
+            background-position:left;
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-size: 95%;
+            width: 100%;
+            height: 600px;
+            margin-top: 61px;
+            color: rgb(255, 255, 255);
+                                    background-color: $darkabuguet;
+                           
+                                    
+        }
+         }
+}
+@media(min-width:780px)
+{
+    .Abuguet{
+        grid-area: welc;
+        display: grid;
+        .welcome{
+          
+            background-image:url(/Assets/GenAssets/Logo-white.png);
+            background-attachment: fixed;
+            background-position:left;
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-size: 95%;
+            width: 100%;
+            height: 600px;
+            margin-top: 61px;
+            color: rgb(255, 255, 255);
+                                    background-color: $darkabuguet;
+                           
+                                    
+        }
+         }
+}
+@media(min-width:1024px)
+{
+    .Abuguet{
+        grid-area: welc;
+        display: grid;
+        .welcome{
+          
+            background-image:url(/Assets/GenAssets/Logo-white.png);
+            background-attachment: fixed;
+            background-position:left;
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-size: 95%;
+            width: 100%;
+            height: 600px;
+            margin-top: 61px;
+            color: rgb(255, 255, 255);
+                                    background-color: $darkabuguet;
+                           
+                                    
+        }
+         }
+}
+@media(min-width:1200px)
+{
+
+    .Abuguet{
+    grid-area: welc;
+    display: grid;
+    .welcome{
+      
+        background-image:url(/Assets/GenAssets/Logo-white.png);
+        background-attachment: fixed;
+        background-position:left;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-size: 95%;
+        width: 100%;
+        height: 600px;
+        margin-top: 61px;
+        color: rgb(255, 255, 255);
+                                background-color: $darkabuguet;
+                       
+                                
+    }
+     }
+}

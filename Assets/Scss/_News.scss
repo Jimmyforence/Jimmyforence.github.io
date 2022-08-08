@@ -1,0 +1,310 @@
+@media(max-width:779px)
+{
+    .contBox
+{
+    
+        margin: 12px;
+        grid-area: content;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+  }
+    
+    
+    .mini{
+        width: 100%;
+        font-size:initial ;
+       
+    
+    
+    }
+    .mini__tit {
+        text-align: center;
+        font-size: 100%;
+        background-color: rgba(0, 255, 255, 0.055);
+        height:fit-content;
+    }
+    .mini__img {
+        width: 100%;
+        height: 60%
+        
+    
+    }
+    
+    .mini div{
+        width: 100%;
+        
+    }
+    
+    .retro{
+        width: 100%;
+        height: 60%;
+    
+    }
+    
+    .retro__tit {
+        text-align:center;
+        font: size 100%;
+        
+        height:fit-content;
+    
+        background-color: rgba(0, 255, 255, 0.055);
+    }
+    
+    .retro__img {
+        width: 100%;
+        height: 60%
+    }
+    
+    .perfect{
+        width: 100%;
+        
+    }
+    
+    .perfect__tit {
+        text-align: center;
+        font-size: 18px;
+        background-color: rgba(0, 255, 255, 0.055);
+        height:fit-content;
+    }
+        
+    
+    .perfect__img {
+        width: 100%;
+        height: 60%
+    }
+
+}
+@media(min-width:780px)
+{
+    .contBox
+{
+    
+        margin: 12px;
+        grid-area: content;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+  }
+    
+    
+    
+    .mini{
+        width: 100%;
+        font-size:initial ;
+       
+    
+    
+    }
+    .mini__tit {
+        text-align: center;
+        font-size: 100%;
+        background-color: rgba(0, 255, 255, 0.055);
+        height:fit-content;
+    }
+    .mini__img {
+        width: 100%;
+        height: 60%
+        
+    
+    }
+    
+    .mini div{
+        width: 100%;
+    }
+    
+    .retro{
+        width: 100%;
+    }
+    
+    .retro__tit {
+        text-align:center;
+        font: size 100%;
+        
+        height:fit-content;
+    
+        background-color: rgba(0, 255, 255, 0.055);
+    }
+    
+    .retro__img {
+        width: 100%;
+        height: 60%
+    }
+    
+    .perfect{
+        width: 100%;
+        
+    }
+    
+    .perfect__tit {
+        text-align: center;
+        font-size: 18px;
+        background-color: rgba(0, 255, 255, 0.055);
+        height:fit-content;
+    }
+        
+    
+    .perfect__img {
+        width: 100%;
+        height: 60%
+    }
+
+}
+
+@media(min-width:1024px)
+{
+    .contBox {
+
+      
+        margin: 30px;
+        grid-area: content;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+    
+    
+    .mini{
+        width: 30%;
+        font-size:initial ;
+       
+    
+    
+    }
+    .mini__tit {
+        text-align: center;
+        font-size: 100%;
+        background-color: rgba(0, 255, 255, 0.055);
+        height:fit-content;
+    }
+    .mini__img {
+        width: 100%;
+        height: 60%
+        
+    
+    }
+    
+    .mini div{
+        width: 30%;
+        
+    }
+    
+    .retro{
+        width: 30%;
+    
+    }
+    
+    .retro__tit {
+        text-align:center;
+        font: size 100%;
+        
+        height:fit-content;
+    
+        background-color: rgba(0, 255, 255, 0.055);
+    }
+    
+    .retro__img {
+        width: 100%;
+        height: 60%
+    }
+    
+    .perfect{
+        width: 30%;
+        
+    }
+    
+    .perfect__tit {
+        text-align: center;
+        font-size: 18px;
+        background-color: rgba(0, 255, 255, 0.055);
+        height:fit-content;
+    }
+        
+    
+    .perfect__img {
+        width: 100%;
+        height: 60%
+    }
+
+}
+@media(min-width:1200px)
+{
+
+    .contBox {
+
+      
+        margin: 30px;
+        grid-area: content;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+    
+    
+    .mini{
+        width: 30%;
+        font-size:initial ;
+       
+    
+    
+    }
+    .mini__tit {
+        text-align: center;
+        font-size: 100%;
+        background-color: rgba(0, 255, 255, 0.055);
+        height:fit-content;
+    }
+    .mini__img {
+        width: 100%;
+        height: 60%
+        
+    
+    }
+    
+    .mini div{
+        width: 30%;
+        
+    }
+    
+    .retro{
+        width: 30%;
+    
+    }
+    
+    .retro__tit {
+        text-align:center;
+        font: size 100%;
+        
+        height:fit-content;
+    
+        background-color: rgba(0, 255, 255, 0.055);
+    }
+    
+    .retro__img {
+        width: 100%;
+        height: 60%
+    }
+    
+    .perfect{
+        width: 30%;
+        
+    }
+    
+    .perfect__tit {
+        text-align: center;
+        font-size: 18px;
+        background-color: rgba(0, 255, 255, 0.055);
+        height:fit-content;
+    }
+        
+    
+    .perfect__img {
+        width: 100%;
+        height: 60%
+    }
+
+}

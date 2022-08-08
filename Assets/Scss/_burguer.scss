@@ -1,0 +1,193 @@
+@media(max-width:779px)
+{.burguer 
+    {
+     margin-top:  0px;
+     
+     width: 45px;
+     height: 45px;
+     background-color: rgb(0, 0, 0);
+     position: absolute;
+     right: 10px;
+     top: 5px;
+     z-index: 9000;
+     cursor: pointer;
+     position: fixed;
+     grid-area: content;
+ 
+     
+    }
+    
+    
+ .burguer span 
+     {
+     display: block;
+     width: 100%;
+     background:rgb(54, 147, 177);
+     height: 10px;
+     margin-top: 3px;
+     transform-origin: 0px 100%;
+     transition: all 200ms;
+     
+     }
+ 
+ 
+ .activeline1 {
+ transform:rotate(45deg)
+ translate(0px, -6px);
+ }
+ .activeline2{
+ opacity:0;
+ margin-left: -30px;
+ }
+ .activeline3{
+     Transform: rotate(-45deg)
+     translate(6px, 8px);
+ }
+ 
+ 
+ 
+ 
+  .logins {
+     
+     flex-direction: column;
+     background-color: rgb(0, 0, 0);
+     font-size: 30px;    
+     justify-content: space-evenly;
+     position: fixed;
+     list-style: none;
+     z-index: 9000;
+     top: 60px;
+     right: 0px;
+     display: block;
+ 
+     
+          }
+ 
+ .social a {
+     flex-direction: column;
+     width: 10px;
+     background-color: rgb(245, 240, 240);
+     font-size: 35px;    
+    float: right;
+ }
+ 
+ aside{
+     display: none;
+ }
+ 
+ .sidekick
+ {
+ background-color: rgb(0, 0, 0);
+ color: aliceblue;
+  top:30px;
+ margin-top: 40px;
+ display: block;
+ }
+}
+@media(min-width:780px)
+{
+    .burguer 
+    {
+     margin-top:  0px;
+     
+     width: 45px;
+     height: 45px;
+     background-color: rgb(0, 0, 0);
+     position: absolute;
+     right: 10px;
+     top: 5px;
+     z-index: 9000;
+     cursor: pointer;
+     position: fixed;
+     grid-area: content;
+ 
+     
+    }
+    
+    
+ .burguer span 
+     {
+     display: block;
+     width: 100%;
+     background:rgb(54, 147, 177);
+     height: 10px;
+     margin-top: 3px;
+     transform-origin: 0px 100%;
+     transition: all 200ms;
+     grid-area: content;
+     }
+ 
+ 
+ .activeline1 {
+ transform:rotate(45deg)
+ translate(0px, -6px);
+ }
+ .activeline2{
+ opacity:0;
+ margin-left: -30px;
+ }
+ .activeline3{
+     Transform: rotate(-45deg)
+     translate(6px, 8px);
+ }
+ 
+ 
+ 
+ 
+  .logins {
+     
+     flex-direction: column;
+     background-color: rgb(0, 0, 0);
+     font-size: 30px;    
+     justify-content: space-evenly;
+     position: fixed;
+     list-style: none;
+     z-index: 9000;
+     top: 60px;
+     right: 0px;
+     display: block;
+ 
+     
+          }
+ 
+ .social a {
+     flex-direction: column;
+     width: 10px;
+     background-color: rgb(245, 240, 240);
+     font-size: 35px;    
+    float: right;
+ }
+ 
+ 
+ aside{
+    display: none;
+}
+
+.sidekick
+{
+background-color: rgb(0, 0, 0);
+color: aliceblue;
+ top:30px;
+margin-top: 40px;
+display: block;
+}
+}
+
+@media(min-width:1024px)
+{
+    .burguer 
+    {
+    
+     display: none ;
+    }
+}
+
+@media(min-width:1200px)
+{
+    .burguer 
+    {
+         display: none ;
+    }
+    
+}
+

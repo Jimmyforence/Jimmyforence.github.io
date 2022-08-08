@@ -1,0 +1,273 @@
+@media(max-width:779px)
+{
+    nav{
+        background-color: rgb(0, 0, 0);
+            
+            
+           color: aliceblue;
+           text-align: center;
+           grid-area: nav;
+           position: fixed;
+           border: 10px;
+           margin-bottom: 5px;
+           top: 0px;
+           z-index: 999;
+           width: 100%; 
+           height: 60px;
+           font-size:16px;
+      
+        }
+    
+    
+    
+        a{
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            
+           
+        }
+
+        .navi
+        
+        {
+            position: absolute;
+         top: 3px;
+         left: 65px;
+        }
+
+
+    .logo{
+        width: 54px;
+         position: absolute;
+         top: 3px;
+         left: 5px;
+        }
+    
+    .twitch {
+        position:absolute;
+        
+        width:54px;
+        right: 75px;
+        top:3px
+    }
+    
+    .twitter{
+        position:absolute;
+        width: 54px;
+        right: 145px;
+        top: 3px;
+    
+    }
+    
+    .insta{
+        position:absolute;
+        width:54px;
+        right: 215px;
+        top:3px
+    }
+    .youtube{
+        position:absolute;
+        width:54px;
+        right: 285px;
+        top:3px
+    
+    }
+    
+    footer{
+        background-color: black;
+        grid-area: footer;
+        color: aliceblue;
+        width: 200%;
+    }
+}
+@media(min-width:780px)
+{
+
+    nav{
+        background-color: rgb(0, 0, 0);
+            
+            
+           color: aliceblue;
+           text-align: center;
+           grid-area: nav;
+           position: fixed;
+           border: 10px;
+           margin-bottom: 5px;
+           top: 0px;
+           z-index: 999;
+           width: 100%; 
+           height: 60px;
+           font-size:medium;
+      
+        }
+    
+    
+    
+        a{
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            margin-left: 20px;
+        }
+    
+        .navi
+        
+        {
+            position: absolute;
+         top: 3px;
+         left: 65px;
+        }
+    .logo{
+        width: 54px;
+         position: absolute;
+         top: 3px;
+         left: 5px;
+        }
+    
+    .twitch {
+        position:absolute;
+        
+        width:54px;
+        right: 75px;
+        top:3px
+    }
+    
+    .twitter{
+        position:absolute;
+        width: 54px;
+        right: 145px;
+        top: 3px;
+    
+    }
+    
+    .insta{
+        position:absolute;
+        width:54px;
+        right: 215px;
+        top:3px
+    }
+    .youtube{
+        position:absolute;
+        width:54px;
+        right: 285px;
+        top:3px
+    
+    }
+    
+    
+    
+}
+
+@media(min-width:1024px)
+{
+    nav{
+        background-color: rgb(0, 0, 0);
+        
+       color: aliceblue;
+        text-align: center;
+        grid-area: nav;
+        position: fixed;
+        border: 0;
+        margin-bottom: 15px;
+        width: 100%; 
+    }
+    
+    a{
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+    }
+    
+    .logo{
+    width: 54px;
+     position: absolute;
+     top: 7px;
+     left: 10px;
+    }
+    
+    .twitch {
+    position:absolute;
+    
+    width: 54px;
+    right: 10px;
+    top:7px
+    }
+    
+    .twitter{
+    position:absolute;
+    width: 54px;
+    right: 75px;
+    top: 7px;
+    
+    }
+    
+    .insta{
+    position:absolute;
+    width: 54px;
+    right: 135px;
+    top:7px
+    }
+    .youtube{
+    position:absolute;
+    width: 54px;
+    right: 195px;
+    top:7px
+    
+    }
+}
+@media(min-width:1200px)
+{
+
+nav{
+    background-color: rgb(0, 0, 0);
+    
+   color: aliceblue;
+    text-align: center;
+    grid-area: nav;
+    position: fixed;
+    border: 0;
+    z-index:999;
+    margin-bottom: 15px;
+    width: 100%; 
+}
+
+a{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.logo{
+    width: 54px;
+ position: absolute;
+ top: 7px;
+ left: 10px;
+}
+
+.twitch {
+position:absolute;
+
+width: 54px;
+right: 15px;
+top:7px
+}
+
+.twitter{
+position:absolute;
+width: 54px;
+right: 75px;
+top: 7px;
+
+}
+
+.insta{
+position:absolute;
+width: 54px;
+right: 135px;
+top:7px
+}
+.youtube{
+position:absolute;
+width: 54px;
+right: 195px;
+top:7px
+
+}
+}

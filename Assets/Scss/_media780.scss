@@ -1,130 +1,10 @@
 /*tablet vertical */
 @media(min-width:780px)
 {
-
-
-
-body{
-    background-color: rgb(255, 255, 255);
-    }
-
-.home{  
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 5 ;
-        grid-template-areas: "nav nav nav nav"
-                            "content content content aside"
-                            "h3 h3 h3 aside"
-                            "cont2 cont2 cont2 aside"
-                            "footer footer footer footer";
-}
-
-
-.sonidoBoom
-{
-    display: grid;
-    grid-area: content;
-    width: 30%;
-    height: 30px;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 3 ;
-    grid-template-areas: "title title "
-                        "subtitle subtitle"
-                        "desc desc"
-                         ;
-}
-
-.titSonido{
-display: grid;
-color: black;
-background-color: rgb(255, 255, 255);
-grid-area: title;
-margin: 10px;
-
-}
-
-.subsonido{
-display: grid;
-color: black;
-background-color: rgb(255, 255, 255);
-grid-area: subtitle;
-margin: 10px;
-}
-.parraf
-{
-display: grid;
-color: black;
-background-color: rgb(160, 35, 35);
-grid-area: desc;
-margin: 10px;
-}
-.contPlayer
-{   
-display: grid;
-flex-direction: column;
-width: 100%;
-margin-top: 30px;
-
-grid-area: cont2;
-grid-template-columns: repeat(2,3fr);
-grid-template-rows: 4 ;
-grid-template-areas: "img tit"
-                    "img subti"
-                    "img desc"
-                    "btn btn";
-                }
-
-
-.playerImg
-{
-  grid-area: img;
-  display: grid;
-
-}
-.titulo
-{
-    grid-area: tit;
-    display: grid;
-    margin: 15px;
-    padding: 10px;
-}
-.episode
-{
-    grid-area: subti;
-    display: grid;
-    margin: 5px;
-    padding: 10px;
-    font-weight: 400;
-    }
-.descript
-{
-    grid-area: desc;
-    display: grid;
-    margin: 2px;
-    padding: 10px;
-    font-weight: 300;
-    font-style: italic;
-}
-   .pIImg
-{
-
-    width: 300px;
     
-}
-.mediaPlay
-{display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 250%;
-    margin-top: 5px;
 
-}
 
-.pImg
-{
-    width: 30px ;
-  
-}
+
 
 /* SASS ThIS */
 /*Blog*/
@@ -403,12 +283,6 @@ form textarea
 
 }
 
-footer{
-    background-color: black;
-    grid-area: footer;
-    color: aliceblue;
-    width: 120%;
-}
 
 
 
@@ -467,69 +341,6 @@ width: 100%;
 
 /*Burger menu */
 
-.burguer 
-   {
-    margin-top:  45px;
-    
-    width: 45px;
-    height: 45px;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    right: 0px;
-    top: 5px;
-    z-index: 9000;
-    cursor: pointer;
-    position: fixed;
-    grid-area: content;
-
-    
-   }
-   
-   
-.burguer span 
-    {
-    display: block;
-    width: 100%;
-    background:rgb(54, 147, 177);
-    height: 10px;
-    margin-top: 3px;
-    transform-origin: 0px 100%;
-    transition: all 200ms;
-    grid-area: content;
-    }
-
-
-.activeline1 {
-transform:rotate(45deg)
-translate(0px, -6px);
-}
-.activeline2{
-opacity:0;
-margin-left: -30px;
-}
-.activeline3{
-    Transform: rotate(-45deg)
-    translate(6px, 8px);
-}
-
-
-
-
- .logins {
-    
-    flex-direction: column;
-    background-color: rgb(0, 0, 0);
-    font-size: 30px;    
-    justify-content: space-evenly;
-    position: fixed;
-    list-style: none;
-    z-index: 9000;
-    top: 55px;
-    right: 43px;
-    display: block;
-
-    
-         }
 
 .social a {
     flex-direction: column;
@@ -539,15 +350,3 @@ margin-left: -30px;
    float: right;
 }
 
-aside{
-    display: none;
-}
-
-.sidekick
-{
-background-color: rgb(0, 0, 0);
-color: aliceblue;
-margin-top: 10px;
-display: block;
-}
-}
