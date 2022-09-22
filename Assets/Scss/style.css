@@ -8,7 +8,7 @@
   .home {
     display: grid;
     background-color: white;
-    grid-template-columns: repeat(1, 110%);
+    grid-template-columns: repeat(1, 100%);
     grid-template-rows: 7;
     grid-template-areas: "nav " "welc " "content" "cont2 " "cont3 " "cont4 " "footer"; } }
 
@@ -16,7 +16,7 @@
   .home {
     display: grid;
     background-color: white;
-    grid-template-columns: repeat(1, 110%);
+    grid-template-columns: repeat(1, 100%);
     grid-template-rows: 7;
     grid-template-areas: "nav " "welc " "content" "cont2 " "cont3 " "cont4 " "footer"; } }
 
@@ -26,7 +26,12 @@
     background-color: white;
     grid-template-columns: repeat(4, 30% 30% 30% 10%);
     grid-template-rows: 7;
-    grid-template-areas: "nav nav nav nav" "welc welc welc aside" "content content content aside" "cont2 cont2 cont2 aside" "cont3 cont3 cont3 aside" "cont4 cont4 cont4 aside" "footer footer footer footer"; } }
+    grid-template-areas: "nav nav nav nav" "welc welc welc aside" "content content content aside" "cont2 cont2 cont2 aside" "cont3 cont3 cont3 aside" "cont4 cont4 cont4 aside" "footer footer footer footer"; }
+  .cartAside {
+    width: 100%; }
+    .cartAside .pCI {
+      width: 100%;
+      top: 100px; } }
 
 @media (min-width: 1200px) {
   .home {
@@ -636,8 +641,8 @@
     background-color: white;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 4;
-    grid-template-areas: "H H H" "STR STR2 content" "STR4 STR5 STR6" "STR7 STR8 STR9"; }
+    grid-template-rows: 5;
+    grid-template-areas: "H H H" "STR STR2 content" "STR4 STR5 STR6" "STR7 STR8 STR9" "car car car"; }
   h2 {
     grid-area: H; }
   .productA {
@@ -1522,9 +1527,6 @@
   form textarea {
     width: 478px; } }
 
-.Shortside {
-  height: 500px; }
-
 @media (max-width: 779px) {
   .Abuguet {
     grid-area: welc;
@@ -1606,13 +1608,30 @@
     font-size: px;
     background-color: black;
     grid-area: aside;
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 4;
+    grid-template-areas: "login" "sear"   "car" "button";
     position: fixed;
     z-index: 999;
     right: 0px; }
     .side li {
       list-style: none;
-      margin-left: 3px; } }
+      margin-left: 3px;
+      grid-area: login; }
+    .side .carro {
+      grid-area: car;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+    .side .erase {
+      grid-area: button; }
+    .side .search {
+      grid-area: sear;
+      display: flex;
+      justify-content: space-evenly; }
+      .side .search .lupa {
+        height: 20px; } }
 
 @media (min-width: 1200px) {
   .side {

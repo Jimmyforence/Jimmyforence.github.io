@@ -158,11 +158,13 @@ grid-template-areas: "H H H"
     background-color:white;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 4 ;
-    grid-template-areas: "H H H"
-                        "STR STR2 content"
-                         "STR4 STR5 STR6"
-                         "STR7 STR8 STR9"   ;
+    grid-template-rows: 5;
+    grid-template-areas:
+      "H H H"
+      "STR STR2 content"
+      "STR4 STR5 STR6"
+      "STR7 STR8 STR9"
+      "car car car"  ;
     
     
     }
@@ -303,11 +305,13 @@ grid-template-areas: "H H H"
     background-color:white;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 4 ;
-grid-template-areas: "H H H"
-                    "STR STR2 content"
-                     "STR4 STR5 STR6"
-                     "STR7 STR8 STR9"   ;
+    grid-template-rows: 4;
+    grid-template-areas:
+      "H H H"
+      "STR STR2 content"
+      "STR4 STR5 STR6"
+      "STR7 STR8 STR9"
+       ;
     
     
     }
@@ -445,15 +449,18 @@ text-align: center;
 background-color:rgba(255, 255, 255, 0);
 display: grid;
 grid-template-columns: repeat(3,1fr);
-grid-template-rows: 4 ;
-grid-template-areas: "H H H"
-                    "STR STR2 content"
-                     "STR4 STR5 STR6"
-                     "STR7 STR8 STR9"   ;
+grid-template-rows: 4;
+grid-template-areas:
+  "H H H"
+  "STR STR2 content"
+  "STR4 STR5 STR6"
+  "STR7 STR8 STR9" ;
 
 
 }
-   
+ 
+
+
 h2{
     grid-area: H;
 }

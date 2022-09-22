@@ -4,7 +4,7 @@
         display: grid;
         
         background-color: rgb(255, 255, 255);
-        grid-template-columns: repeat(1,110%);
+        grid-template-columns: repeat(1,100%);
         grid-template-rows: 7 ;
         grid-template-areas: "nav "
                             "welc "
@@ -22,7 +22,7 @@
         display: grid;
         
         background-color: rgb(255, 255, 255);
-        grid-template-columns: repeat(1,110%);
+        grid-template-columns: repeat(1,100%);
         grid-template-rows: 7 ;
         grid-template-areas: "nav "
                             "welc "
@@ -53,6 +53,15 @@
                             "footer footer footer footer";
     }
 
+    .cartAside
+{
+width: 100%;
+.pCI
+{
+    width: 100%;
+    top:100px ;
+}
+}
 
 }
 @media(min-width:1200px)

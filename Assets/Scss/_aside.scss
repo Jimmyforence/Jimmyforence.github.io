@@ -24,7 +24,15 @@
         font-size: px;
         background-color: rgb(0, 0, 0);
         grid-area: aside;
-        display: block;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 4;
+        grid-template-areas:
+        
+        "login"
+        "sear"  
+          "car"
+          "button" ;
         position: fixed;
     z-index: 999;
     right: 0px;
@@ -32,7 +40,29 @@
          li{
             list-style: none;
             margin-left: 3px;
+            grid-area: login;
         }
+        .carro {
+            grid-area: car;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+          }
+          .erase {
+            grid-area: button;
+          }
+        
+          .search {
+            grid-area: sear;
+            display: flex;
+        
+            justify-content: space-evenly;
+            .lupa{
+                height: 20px;
+              
+            }
+          }
+
     }
 }
 
