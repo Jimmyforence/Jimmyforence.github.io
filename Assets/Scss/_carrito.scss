@@ -1,0 +1,58 @@
+
+.carro
+{
+    grid-area:car;
+}
+.qtyA
+{
+    width: 50px;
+    background-color: black;
+    color: azure;
+    resize: none;
+    overflow:auto;
+}
+.qtyB
+{
+    width: 50px;
+    background-color: black;
+    color: azure;
+    resize: none;
+    overflow:auto;
+}
+.qtyC
+{
+    width: 50px;
+    background-color: black;
+    color: azure;
+    resize: none;
+    overflow:auto;
+}
+
+.cartAside
+{
+    margin-top: 5px;
+    display: block;
+  width: 80px;
+  
+}
+
+
+img
+{
+ 
+ width: 100%;
+}
+
+.total{
+    grid-area: total;
+}
+.totalT
+{
+ 
+    width: 50px;
+    background-color: black;
+    color: azure;
+    resize: none;
+    overflow:auto;
+}
+

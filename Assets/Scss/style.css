@@ -4,6 +4,11 @@
   font-family: 'Montserrat';
   font-weight: 600; }
 
+.cartAside {
+  width: 30px; }
+  .cartAside .pCI {
+    width: 10px; }
+
 @media (max-width: 779px) {
   .home {
     display: grid;
@@ -1611,7 +1616,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 4;
-    grid-template-areas: "login" "sear"   "car" "button";
+    grid-template-areas: "login" "sear"   "car" "total";
     position: fixed;
     z-index: 999;
     right: 0px; }
@@ -1690,3 +1695,45 @@
   .shortSideB li {
     list-style: none;
     margin-left: 3px; }
+
+.carro {
+  grid-area: car; }
+
+.qtyA {
+  width: 50px;
+  background-color: black;
+  color: azure;
+  resize: none;
+  overflow: auto; }
+
+.qtyB {
+  width: 50px;
+  background-color: black;
+  color: azure;
+  resize: none;
+  overflow: auto; }
+
+.qtyC {
+  width: 50px;
+  background-color: black;
+  color: azure;
+  resize: none;
+  overflow: auto; }
+
+.cartAside {
+  margin-top: 5px;
+  display: block;
+  width: 80px; }
+
+img {
+  width: 100%; }
+
+.total {
+  grid-area: total; }
+
+.totalT {
+  width: 50px;
+  background-color: black;
+  color: azure;
+  resize: none;
+  overflow: auto; }
