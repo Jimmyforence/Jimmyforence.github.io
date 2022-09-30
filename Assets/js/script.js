@@ -16,6 +16,9 @@ function aBurguer(){
 }
 
 
+
+
+
 //arrays
 const carrito = [];
 let prodDisp = [
@@ -130,8 +133,6 @@ else{
 
 
 
-
-
 document.querySelector(".calc").addEventListener("click", getTotal, true);
 
 const pagar = ( playera1.precio * playera1.qty)
@@ -154,60 +155,37 @@ function busca ()
 {
     let monto =document.querySelector(".look").value;
     let searchresult =  prodDisp.filter ((producto) => producto.precio >= monto)
-console.log(searchresult);
+
 }
 
+// Erase
+document.querySelector(".erase").addEventListener("click",CarroErase, true)
+
+function CarroErase(){
+    if (carrito.length===0){
+    Swal.fire({
+        title: 'Nada en el carro',
+        text: 'No hemos hecho nada',
+        icon: 'error',
+        confirmButtonText: 'Ok'
+      })}
+      else{
+
+      let borro =document.querySelector(".cartAside")
+      borro.remove()
+      PAIndex = carrito.indexOf('playera1.qty') 
+      PBIndex = carrito.indexOf('playera2.qty')     
+      PCIndex = carrito.indexOf('playera3.qty')   
+      carrito.length=0
+      Swal.fire({
+        title: 'Compras Borradas',
+        text: 'Los haz eliminado a todos',
+        icon: 'error',
+        confirmButtonText: 'Muy mal'
+      })}
+      }
 
 
-// // Encarro
-// 
-// let drawCart = document.getElementById ("carro")
-// //let drawCart = document.getElementById ("btn") opcion de prueba
-
-// const addCart = (cosa) =>
-// { const indexCart = carrito.findIndex((elemento)=>{
-//     return elemento.id === prodDisp[cosa].id
- 
-// });
-// // -1 is a value that returns if there is none on the array
-// if (indexCart === -1){
-//     const adderir = 10
-//     // adderir = 1;
-//     carrito.push(adderir);
-//     dibujarCarrito();
-// }
-// else{
-//    carrito[indexCart].cantidad +=1;
-//    dibujarCarrito()
-// }
-// };
-
-
-// document.querySelector(".btnB").addEventListener("click", addCart, true);
-
-// document.getElementById("btn").addEventListener("click", addCart, true);
-
-// // it might be that indice = sku. Double check that.
-// const dibujarCarrito=() => 
-// {
-//  drawCart.innerHTML= "";
-// if(carrito.length>  0){
-//     carrito.forEach((prodDisp,sku) =>
-//     {
-//         total =total + prodDisp.precio * prodDisp.cantidad;
-//         const carritoContainer = document.createElement("div");
-//         carritoContainer.className = "miniCart";
-//         carritoContainer.innerHTML = 
-//         `<img class= "carImg" src="${prodDisp.imagen}"/>
-//         <textarea class="productDetails" name="precio" id="look" cols="9" rows="1">${prodDisp.precio}</textarea>
-//         <textarea class="productDetails" name="cantidad" id="look" cols="9" rows="1">${prodDisp.cantidad}</textarea>
-//         <button class= "c+" onClick="removeProduct(${prodDisp.cantidad+1})"> + </button> <button class= "C-"onClick="removeProduct(${prodDisp.cantidad-1})> - </button>`;
-//         carritoContainer.appendChild(carritoContainer);
-//     });
-//     document.getElementById("cash").value = total;
-// }Else
-// carritoContainer.classList.remove("miniCart");
-// }
 
 
 
