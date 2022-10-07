@@ -1,3 +1,5 @@
+const { post } = require("request");
+
 document.querySelector(".burguer").addEventListener("click", aBurguer);
 
 var line1= document.querySelector(".line1");
@@ -187,5 +189,28 @@ function CarroErase(){
 
 
 
+document.querySelector(".sMail").addEventListener("click",SendMail,true)
 
-
+function SendMail()
+{
+    post('https://api.emailjs.com/api/v1.0/email/send')
+    var dataM = {
+        service_id: 'service_awj2n9l',
+        template_id: 'YOUR_TEMPLATE_ID',
+        user_id: 'YOUR_PUBLIC_KEY',
+        template_params: {
+            'username': 'James',
+            'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
+        }
+    };
+     
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+        type: 'POST',
+        dataM: JSON.stringify(dataM),
+        contentType: 'application/json'
+    }).done(function() {
+        alert('Your mail is sent!');
+    }).fail(function(error) {
+        alert('Oops... ' + JSON.stringify(error));
+    });
+}
